@@ -1,0 +1,324 @@
+---
+title: "ggplot"
+output: html_notebook
+---
+
+```{r}
+# load package(s) first
+library(dplyr)
+```
+
+R has a sample dataframe "mtcars".
+```{r}
+mtcars
+```
+
+# Using `ggplot2` package
+
+> ggplot2 is a system for declaratively creating graphics, based on The Grammar of Graphics. You provide the data, tell ggplot2 how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details. (https://ggplot2.tidyverse.org)
+
+[RStudio ggplot2 Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf)
+
+```{r}
+# install.packages("ggplot2") # install only once
+library(ggplot2) # load every session
+```
+
+### Basic Syntax
+
+```
+ggplot(data = dataset, mapping = aes(x = xcol, y = ycol)) + geom_histogram()
+```
+- **ggplot layer**: create a ggplot object. especially `aes()` specifies what columns of the data table will be used as visual attributes of graphical elements in the plot.  
+- **geom layer**: define a shape of geometric plot  
+- and more other layers
+
+### Aesthetics
+|||
+|-|-|
+|`colour`|Coloring outline|
+|`fill`|Coloring inside|
+|`linetype`|Line type|
+|`shape`|Shape of point|
+|`alpha`|Transparency|
+
+### geom objects
+|||
+|-|-|
+|`geom_point()`|Scatter plot|
+|`geom_bar()`|Bar chart|
+|`geom_line()`|Line plot|
+|`geom_histogram()`|Histogram|
+|`geom_boxplot()`|Box plot|
+
+Inside `aes()`: variables from dataframe.  
+Outside `aes()`: options not from dataframe.
+---
+
+#### Scatter plot `geom_point()`
+
+```{r}
+ggplot(mtcars, aes(x = mpg, y = hp)) + geom_point()
+```
+
+#### Bar chart `geom_bar()`
+
+```{r}
+ggplot(mtcars, aes(x = cyl)) + geom_bar()
+```
+
+#### Line plot `geom_line()`
+
+```{r}
+ggplot(mtcars, aes(x = mpg, y = wt)) + geom_line()
+```
+
+#### Histogram `geom_histogram()`
+
+```{r}
+ggplot(mtcars, aes(x = wt)) + geom_histogram()
+```
+
+#### Box plot `geom_boxplot()`
+
+Use `factor()` to treat `cyl` as a discrete (categorical) variable.
+
+```{r}
+ggplot(mtcars, aes(x = factor(cyl), y = wt)) + geom_boxplot()
+```
+
+
+
+```{r}
+ggplot(mtcars, aes(x = mpg, y = hp, colour = cyl)) + 
+  geom_point(aes(color = factor(gear))) +
+  geom_smooth(method = "lm") + 
+  labs(title = "Miles per Gallon -vs- Horsepower")
+```
+
+
+---
+
+## `storms` dataframe
+
+```{r}
+head(storms)
+```
+
+### Bar plot
+How many records are there in each year?
+
+```{r}
+ggplot(storms, aes(x = year)) + geom_bar()
+```
+```{r}
+# this works as well
+ggplot(storms) + geom_bar(aes(x = year))
+```
+
+Then, how many storms are there in each year?
+
+Need some operation.
+
+```{r}
+distinct(group_by(select(storms, year, name), year))
+```
+
+```{r}
+storms_year_name <- distinct(group_by(select(storms, year, name), year))
+
+ggplot(storms_year_name) + geom_bar(aes(x = year))
+```
+
+```{r}
+# check
+count(storms_year_name)
+```
+
+### Histogram
+
+```{r}
+storms75 <- filter(storms, year == 1975)
+
+ggplot(storms75) + geom_histogram(aes(x = wind))
+```
+
+Change the bin width and compare.
+
+```{r}
+ggplot(storms75, aes(x = wind)) + geom_histogram(binwidth = 5)
+ggplot(storms75, aes(x = wind)) + geom_histogram(binwidth = 10)
+```
+
+### Box plot
+
+There are three storms in 1975: Amy, Caroline, and Doris.
+
+```{r}
+unique(pull(storms75, name))
+```
+
+Compare the wind speeds of the three.
+
+```{r}
+ggplot(storms75, aes(x = name, y = wind)) + geom_boxplot()
+```
+
+### Density curve
+
+```{r}
+ggplot(storms75, aes(x = wind)) + geom_density()
+```
+
+How is the distribution like?
+
+```{r}
+ggplot(storms75, aes(x = wind, color = name)) + 
+  geom_density(aes(fill = name), alpha = 0.5)
+```
+
+To produce separated frames, use `facet_wrap()`. Facetting by `name`.
+
+```{r}
+ggplot(storms75, aes(x = wind, color = name)) + 
+  geom_density(aes(fill = name), alpha = 0.5) + 
+  facet_wrap(~ name)
+```
+
+### Scatter plot
+
+```{r}
+amy75 <- filter(storms75, name == "Amy")
+head(amy75)
+```
+
+```{r}
+ggplot(data = amy75, aes(x = 1:nrow(amy75), y = wind)) +
+  geom_point() + 
+  xlab("time (6 hours each)")
+```
+
+### Line plot
+
+For chronological graph, line plot is commonly used.
+
+```{r}
+ggplot(data = amy75, aes(x = 1:nrow(amy75), y = wind)) +
+  geom_point() + 
+  geom_line() + 
+  xlab("time")
+```
+
+Color by `status`.
+
+```{r}
+ggplot(amy75, aes(x = 1:nrow(amy75), y = wind)) + 
+  geom_line() + 
+  geom_point(aes(color = status))
+```
+
+What about pressure?
+
+```{r}
+ggplot(amy75, aes(x = 1:nrow(amy75), y = pressure)) + 
+  geom_point(aes(color = status)) + 
+  geom_line(linetype = "dashed")
+```
+
+Graphing pressure and taking into account the wind speed reflected in the size of points and line segments.
+
+```{r}
+ggplot(amy75, aes(x = 1:nrow(amy75), y = pressure)) + 
+  geom_line(aes(size = wind), color = "gray") + 
+  geom_point(aes(color = status, size = wind)) 
+```
+
+---
+
+## Exercise
+
+1) Use "ggplot2" functions to make a single scatterplot of wind and pressure for all storms. Use category to add color to the dots.
+
+```{r}
+ggplot(storms, aes(x = wind, y = pressure)) + 
+  geom_point(aes(color = category))
+```
+
+
+2) Use "ggplot2" functions to make a scatterplot of wind and pressure for all storms, facetting by month, and using category to differentiate by color.
+
+```{r}
+ggplot(storms, aes(x = wind, y = pressure)) + 
+  geom_point(aes(color = category)) + 
+  facet_wrap(~ month)
+```
+
+
+3) Use "ggplot2" functions to make a scatterplot of wind and pressure for all storms, but now create facets based on month. Feel free to add some amount of alpha transparency to the color of dots.
+
+```{r}
+ggplot(storms, aes(x = wind, y = pressure)) + 
+  geom_point(aes(color = category), alpha = 0.2) + 
+  facet_wrap(~ month)
+```
+
+
+4) Create boxplots of pressure, for storms in 1980. You can also try graphing violins (geom_violin()) instead of boxplots (geom_boxplot()).
+
+```{r}
+storms80 <- filter(storms, year == 1980)
+
+ggplot(storms80, aes(x = name, y = pressure)) + 
+  geom_boxplot()
+
+ggplot(storms80, aes(x = name, y = pressure)) + 
+  geom_violin()
+```
+
+
+5) Make a scatterplot of wind (x-axis) and ts_diameter (y-axis), and add a regression line—via geom_smooth().
+
+```{r}
+ggplot(storms, aes(x = wind, y = ts_diameter)) + 
+  geom_point(na.rm = TRUE) + # remove missing values from the data
+  geom_smooth(method = "lm", na.rm = TRUE)
+```
+
+
+Try geom_smooth() with method = lm to fit a least squares regression line.
+
+Try geom_smooth() with method = loess to fit a local polynomial regression.
+
+```{r}
+ggplot(storms, aes(x = wind, y = ts_diameter)) + 
+  geom_point(na.rm = TRUE) + 
+  geom_smooth(method = "loess", na.rm = TRUE)
+```
+
+
+6) Repeat the previous scatterplot of wind (x-axis) and ts_diameter (y-axis), but now use status to color code the points, and use the alpha argument to add some transparency to the dots.
+
+```{r}
+ggplot(storms, aes(x = wind, y = ts_diameter)) + 
+  geom_point(aes(color = status), alpha = 0.5, na.rm = TRUE) + 
+  geom_smooth(method = "lm", na.rm = TRUE)
+```
+
+
+7) Take a look at the cheatsheet of "ggplot2" and make at least 5 more different graphs (e.g. of one variable, of two variables, of three variables).
+
+```{r}
+# one variable
+ggplot(storms) + geom_qq(aes(sample = pressure))
+
+ggplot(storms) + geom_bar(aes(x = status))
+
+# two variables
+ggplot(count(storms_year_name), aes(x = year, y = n)) + geom_line()
+
+ggplot(storms, aes(x = wind, y = pressure)) + geom_density2d()
+
+# three variables
+ggplot(storms, aes(x = wind, y = pressure)) + geom_tile(aes(fill = status))
+```
+
