@@ -1,0 +1,229 @@
+---
+title: "Geographical Maps with ggplot2"
+output: pdf_document
+---
+```{r}
+# load dplyr package
+library(dplyr)
+library(ggplot2)
+```
+
+```{r}
+storms75 <- filter(storms, year == 1975)
+head(storms75)
+```
+
+```{r}
+ggplot(storms75, aes(x = long, y = lat)) + geom_point(aes(color = name))
+
+# alternative ways to write equivalent commands
+# ggplot(data = storms75) +  geom_point(aes(x = long, y = lat, color = name))
+# ggplot() +  geom_point(data = storms75, aes(x = long, y = lat, color = name))
+```
+
+But where is it? We need an image of world map.
+
+# Using `maps` package
+
+```{r}
+# install maps package
+# install.packages("maps")
+
+# load maps package
+library(maps)
+```
+
+`map()` plots geographical maps.
+
+```{r}
+# world map
+map("world")
+
+# usa map
+map("usa")
+
+# usa states
+map("state")
+
+# usa counties
+map("county")
+```
+
+To use `ggplot2` to map map objects, first we need to convert a map object to a dataframe object.
+
+```{r}
+world_map <- map_data("world")
+head(world_map)
+
+# check if world_map is really a dataframe object
+class(world_map)
+```
+
+Use `geom_polygon()` to draw a map. `theme_bw()` changes the map to black-white.
+
+```{r}
+ggplot() + 
+  geom_polygon(data = world_map, aes(x = long, y = lat, group = group))
+
+# use theme_bw()
+# the background changes to white
+ggplot() + 
+  geom_polygon(data = world_map, aes(x = long, y = lat, group = group)) + 
+  theme_bw()
+```
+
+```{r}
+# store the ggplot to a variable
+gg_world <- ggplot() + 
+  geom_polygon(data = world_map, 
+               aes(x = long, y = lat, group = group), 
+               fill = "gray95", colour = "gray70", size = 0.2) +
+  theme_bw()
+
+gg_world
+```
+
+Let's add the points of the storm records. Use `xlim()` and `ylim()` to specify the range of longitude and latitude for zooming-in.
+
+```{r}
+gg_world + geom_point(data = storms75, aes(x = long, y = lat, color = name))
+
+# zoom-in
+gg_world + geom_point(data = storms75, aes(x = long, y = lat, color = name)) +
+  xlim(c(-150, 0)) +
+  ylim(c(0, 50))
+
+# add wind speed feature by setting size argument
+gg_world + 
+  geom_point(data = storms75, 
+             aes(x = long, y = lat, color = name, size = wind), alpha = 0.5) +
+  xlim(c(-150, 0)) +
+  ylim(c(0, 50))
+```
+
+`geom_path()` acts like `geom_point()`. It connects points but it's more like a "path" of the points.
+
+```{r}
+# similar result
+gg_world + 
+  geom_path(data = storms75, 
+            aes(x = long, y = lat, color = name, size = wind), 
+            alpha = 0.5, lineend = "round") +
+  xlim(c(-150, 0)) +
+  ylim(c(0, 50))
+```
+
+See the difference between `geom_line()` and `geom_path()` Both connects points but there's a big difference.
+
+```{r}
+# just an example
+doris75 <- filter(storms75, name == "Doris")
+
+# geom_path()
+ggplot(data = doris75, aes(x = long, y = lat)) + geom_path()
+
+# geom_line()
+ggplot(data = doris75, aes(x = long, y = lat)) + geom_line()
+```
+
+# Using `rnaturalearth` package
+
+```{r}
+# install rnaturalearth package
+# install.packages("rnaturalearth)
+# may need additional packages
+# install.packages(c("rnaturalearthdata", "rgeos"))
+
+# load rnaturalearth package
+library(rnaturalearth)
+
+# library(rnaturalearthdata)
+# library(rgeos)
+```
+
+
+`ne_countries()` gets world map polygons.
+
+```{r}
+world_df <- ne_countries(scale = "medium", returnclass = "sf")
+class(world_df)
+```
+
+`geom_sf()` visualizes simple feature objects `sf`,
+
+```{r}
+ggplot(data = world_df) + geom_sf() + theme_bw()
+```
+
+We can set specify the region using `coord_sf()`, instead of using `xlim()` and `ylim()`.
+
+```{r}
+gg_world2 <- ggplot(data = world_df) + 
+  geom_sf() + 
+  coord_sf(xlim = c(-150, 0), y = c(0, 90), expand = TRUE) + 
+  theme_bw()
+
+gg_world2 + 
+  geom_path(data = storms75, 
+            aes(x = long, y = lat, color = name), 
+            lineend = "round", size = 2, alpha = 0.5)
+```
+
+Facet by year from 1975 to 1980.
+
+```{r}
+storms_75_80 <- filter(storms, year %in% 1975:1980)
+
+gg_world + geom_path(data = storms_75_80, 
+                     aes(x = long, y = lat, group = name), 
+                     lineend = "round") + 
+  xlim(c(-150, 0)) + ylim(c(0, 90)) + 
+  facet_wrap((~ year))
+```
+
+# Exercises
+1) Filter storms in the 1980’s decade (1980 - 1989) and make a plot, with facets by month.year`
+
+```{r}
+storms80s <- filter(storms, year %in% 1980:1989)
+head(storms80s)
+```
+
+Which year seems to have the largest number of storms?
+Which year seems to have the smallest number of storms?
+Does it seem to be a pattern (e.g. increasing number of storms over years)?
+
+```{r}
+num_of_storms80s <- distinct(group_by(storms80s, year, name), year)
+num_of_storms80s
+
+# by the bar plot, 1989 had the largest number of storms
+# and 1987 had the smallest number of storms
+ggplot(data = num_of_storms80s, aes(x = factor(year))) + # factor year to set label with only integers
+  geom_bar()
+```
+
+The number of storms increased since 1980, but there seems no particular pattern over the period.
+
+
+2) Take the previous data, storms in the 1980’s decade, and make a plot, with but this time with facets by month.
+
+What is the most active month?
+What is the least active month?
+Are there months without any storms?
+
+```{r}
+num_storms_month <- distinct(group_by(storms80s, year, name, month), month)
+num_storms_month
+ggplot(data = num_storms_month, aes(x = month)) + geom_bar()
+
+# facet by month but also year
+num_storms_year_month <- distinct(group_by(storms80s, year, name, month), year, month)
+num_storms_year_month
+ggplot(data = num_storms_year_month, aes(x = factor(year))) + 
+  geom_bar() + 
+  facet_wrap(~ month) + 
+  theme(axis.text.x = element_text(size=6),axis.text.y = element_text(size=10)) # avoid overlapping labels
+```
+
+The most active month is September and least active month is December. No storms: January through May.
