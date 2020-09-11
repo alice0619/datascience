@@ -223,7 +223,7 @@ num_storms_year_month
 ggplot(data = num_storms_year_month, aes(x = factor(year))) + 
   geom_bar() + 
   facet_wrap(~ month) + 
-  theme(axis.text.x = element_text(size=6),axis.text.y = element_text(size=10)) # avoid overlapping labels
+  theme(axis.text.x = element_text(size=6)) # avoid overlapping labels
 ```
 
 The most active month is September and least active month is December. No storms: January through May.
