@@ -1,6 +1,6 @@
 ---
 title: "Exploratory Data Analysis with dplyr"
-output: html_document
+output: pdf_document
 ---
 
 # Functions
