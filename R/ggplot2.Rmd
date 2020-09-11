@@ -1,6 +1,6 @@
 ---
-title: "ggplot"
-output: html_notebook
+title: "ggplot2"
+output: pdf_document
 ---
 
 ```{r}
