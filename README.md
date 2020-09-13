@@ -1,4 +1,4 @@
-# datascience
+# Data Science
 
 This repository stores the materials I've learned.  
 データサイエンスのクラスの内容についてまとめたものを保存していく。
