@@ -4,3 +4,5 @@
 <a href = "https://github.com/alice0619/datascience/blob/master/R/eda_with_dplyr.Rmd">(コード)</a>
 2. <a href = "https://github.com/alice0619/datascience/blob/master/R/ggplot2.pdf">`ggplot2`パッケージ</a>　
 <a href = "https://github.com/alice0619/datascience/blob/master/R/ggplot2.Rmd">(コード)</a>
+3. <a href = "https://github.com/alice0619/datascience/blob/master/R/geographical_maps.pdf">地図パッケージ`maps`、`rnaturalearth`</a>　
+<a href = "https://github.com/alice0619/datascience/blob/master/R/geographical_maps.Rmd">(コード)</a>
