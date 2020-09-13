@@ -1,1 +1,1 @@
-- [Markdown, LaTex, and Basic Math Review]("latex.ipynb")
+- <a href = "latex.ipynd">Markdown, LaTex, and Basic Math Review</a>
