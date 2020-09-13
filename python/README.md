@@ -1,1 +1,1 @@
-- <a href = "latex.ipynd">Markdown, LaTex, and Basic Math Review</a>
+- <a href = "https://github.com/alice0619/datascience/blob/master/python/latex.ipynb">マークダウン記法、LaTex記法</a>
