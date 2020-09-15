@@ -205,7 +205,7 @@ summary(select(amy75, wind)) # stats only for wind
 
 
 ### Exercises
-1) Use "dplyr" functions/commands to create a table (e.g. tibble) storm_names_1980s containing the name and year of storms recorded during the 1980s (i.e. from 1980 to 1989).
+1) Use "dplyr" functions/commands to create a table (e.g. tibble) `storm_names_1980s` containing the `name` and `year` of storms recorded during the 1980s (i.e. from 1980 to 1989).
 
 ```{r}
 storm_names_1980s <- distinct(filter(storms, year >= 1980 & year <= 1989), name, year)
@@ -213,23 +213,23 @@ storm_names_1980s
 ```
 
 
-2) Use "dplyr" functions/commands to create a table (e.g. tibble) storms_per_year containing the number of storms recorded in each year (i.e. counts or frequencies of storms in each year). This table should contain two columns: year values in the first column, and number of storms in the second column.
+2) Use "dplyr" functions/commands to create a table (e.g. tibble) `storms_per_year` containing the number of storms recorded in each year (i.e. counts or frequencies of storms in each year). This table should contain two columns: `year` values in the first column, and number of storms in the second column.
 
 ```{r}
-storms_per_year <- count(storms, year)
+storms_per_year <- count(distinct(storms, name, year), year)
 storms_per_year
 ```
 
 
-3) Use "dplyr" functions/commands to create a table (e.g. tibble) storm_records_per_year containing three columns: 1) name of storm, 2) year of storm, and 3) count for number of records (of the corresponding storm).
+3) Use "dplyr" functions/commands to create a table (e.g. tibble) `storm_records_per_year` containing three columns: 1) `name` of storm, 2) `year` of storm, and 3) `count` for number of records (of the corresponding storm).
 
 ```{r}
-storm_records_per_year <- count(storms, name, year)
+storm_records_per_year <- arrange(rename(count(storms, name, year), count = n), year)
 storm_records_per_year
 ```
 
 
-4) Use "dplyr" functions/commands to display the different (unique) types of storm status.
+4) Use "dplyr" functions/commands to display the different (unique) types of storm `status`.
 
 ```{r}
 # they are all the same (but the last one returns a vector)
@@ -248,7 +248,7 @@ distinct(storms, category)
 ```
 
 
-6) Use "dplyr" functions/commands to create a table (e.g. tibble) storms_categ5 containing the name and year of those storms of category 5.
+6) Use "dplyr" functions/commands to create a table (e.g. tibble) `storms_categ5` containing the `name` and `year` of those storms of category 5.
 
 ```{r}
 storms_categ5 <- select(filter(storms, category == 5), name, year)
@@ -256,14 +256,14 @@ storms_categ5
 ```
 
 
-7) Use "dplyr" functions/commands to display a table showing the status, avg_pressure (average pressure), and avg_wind (average wind speed), for each type of storm category. This table should contain four columns: 1) category, 2) status, 3) avg_pressure, and 4) avg_wind.
+7) Use "dplyr" functions/commands to display a table showing the `status`, `avg_pressure` (average pressure), and `avg_wind` (average wind speed), for each type of storm category. This table should contain four columns: 1) `category`, 2) `status`, 3) `avg_pressure`, and 4) `avg_wind`.
 
 ```{r}
 summarise(group_by(storms, category, status), avg_pressure = mean(pressure), avg_wind = mean(wind))
 ```
 
 
-8) Use "dplyr" functions/commands to create a table (e.g. tibble) max_wind_per_storm containing three columns: 1) year of storm, 2) name of storm, and 3) max_wind maximum wind speed record (for that storm).
+8) Use "dplyr" functions/commands to create a table (e.g. tibble) `max_wind_per_storm` containing three columns: 1) `year` of storm, 2) `name` of storm, and 3) `max_wind` maximum wind speed record (for that storm).
 
 ```{r}
 max_wind_per_storm <- summarise(group_by(storms, year, name), max_wind = max(wind))
@@ -271,7 +271,7 @@ max_wind_per_storm
 ```
 
 
-9) Use "dplyr" functions/commands to create a table (e.g. tibble) max_wind_per_year containing three columns: 1) year of storm, 2) name of storm, and 3) wind maximum wind speed record (for that year). Arrange rows by wind speed in decreasing order.
+9) Use "dplyr" functions/commands to create a table (e.g. tibble) `max_wind_per_year` containing three columns: 1) `year` of storm, 2) `name` of storm, and 3) wind maximum wind speed record (for that year). Arrange rows by wind speed in decreasing order.
 
 ```{r}
 max_wind_per_year <- arrange(summarise(group_by(storms, year), 
