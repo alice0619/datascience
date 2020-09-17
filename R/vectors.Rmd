@@ -1,0 +1,500 @@
+---
+title: "Vectors in R"
+output: pdf_document
+---
+
+# What's Vector?
+**Vector: ** a collection of same data type. It is called **Atomic structure**. Use `c()` to create a vector to combine multiple elements.     
+
+Examples
+```{r}
+x <- 5 # a vector with length 1
+x
+
+1 + 2 # addition of vectors with length 1
+
+c("a", "b", "c") # a vector of character
+```
+
+Most programming languages has a concept of scalar, but R doesn't.
+
+# Name Elements
+
+```{r}
+x <- c("name" = "Vivi", "age" = 26, "sex" = "F")
+x
+
+# obtain just names
+names(x)
+
+# change names
+names(x) <- c("NAaaaaME", "AGE", "SEX")
+x
+
+# name becomes NA if not defined
+names(x) <- c("naaaaammmeeee")
+x
+```
+
+
+# Accessing an Element of Vector
+Use brackets `[]` after the variable.
+
+```{r}
+x <- 1:10 # 1 2 3 4 5 6 7 8 9 10
+x[1]
+x[3]
+x[1:2]
+x[-2]
+
+x[x %% 2 == 0] # elements whose remainder is 0 when divided by 2
+
+names(x) <- c("a", "b", "c", "d", "e", "f", "g", "h", "i", "j")
+x["c"] # access by name
+
+x[c(1, 3, 8)] # obtain elements of index 1, 3, and 8
+```
+
+# Adding Elements
+1. `name of vector[new index] <- element`
+
+```{r}
+x <- 1:3
+x
+x[4] <- 100
+x
+x[6] <- -100
+x # skip undefined index and the undefined element becomes NA
+```
+
+2. use `c()`
+
+```{r}
+x
+x <- c(x, 22, Inf)
+x
+
+# with name
+y <- c("a" = 11, "b" = 45, "c" = -1)
+y[4] <- 30
+y # 30 has no name
+y<- c(y, 100, 3000)
+y # 30, 100, and 3000 have no name
+```
+
+# Some Functions for Vector
+- `length()`: returns a number of elements
+- `sort()`: change the order of elements in increasing order. set `decreasing = TRUE` to order decreasingly
+- `rev()`: reverse the order of elements
+- `unique()`: returns only unique elements
+
+```{r}
+x <- c(1, 1, 2, 5, -9, 4, 2)
+length(x)
+sort(x)
+sort(x, decreasing = TRUE)
+rev(x)
+unique(x)
+x # they don't mutate the original
+```
+
+# Generate Sequences
+1. `:`
+2. `seq()`
+3. `rep()`
+
+```{r}
+-2:5
+10:1
+-1:-5
+-5:-1
+
+seq(1, 10)
+seq(from = 1, to = 10, by = 2)
+
+rep(1, times = 3)
+rep(c(1, 2), times = 3)
+rep(1:2, each = 3)
+rep(1:2, length.out = 5)
+rep(c(3, 2, 1), times = 3, each = 2)
+
+rep(seq(1, 5, 2), times = 2, each = 3)
+```
+
+# Vectorization
+Applying a function on all elements of vector.
+
+```{r}
+x <- 1:3
+log_x <- log(x)
+log_x
+
+x / 2
+```
+
+# Recycling
+Recycle the elements of vector of shorter length when operating something with vector of different length.
+
+```{r}
+x <- 1:5
+y <- 2:6 # same length as x
+z <- 10 # vector of length 1
+
+x + y # same length
+x + z # different length
+y - z # different length
+x * y # same length
+x * z # different length
+```
+
+
+# Data Types
+There are 3 functions to check a data type:
+* `typeof()` returns a basic type of the variable
+  * vector (integer, double, character, etc), list, function, ...
+* `mode()` returns a type of the element
+  * numeric (integer, double), complex, logical, ...
+* `class()` returns a type of class of the object
+  * matrix, array, factor, ...
+  * if class is not defined, it returns a basic type or mode.
+
+- logical: `TRUE`, `FALSE`, `T`, `F`, `NA`
+
+```{r}
+typeof(TRUE)
+typeof(NA)
+```
+
+- integer: to specify, add `L` next to a number; otherwise it is treated as "double" but it is rare to specify integer.
+
+```{r}
+typeof(1L)
+typeof(1) # no "L" is treated as "double"
+
+mode(1L)
+
+class(1L)
+```
+
+- double: a number with decimal or real number.
+
+```{r}
+typeof(5)
+typeof(-5)
+typeof(-0.3)
+typeof(1e-5) # e^-5
+```
+
+- complex: a complex number by adding "i".
+
+```{r}
+typeof(3 + 5i)
+typeof(1i)
+typeof(3 + 0i)
+typeof(complex(re = 2, im = 3)) # 2 + 3i
+```
+
+- character: string(s). it is always a character if it is surrounded by `""`.
+
+```{r}
+typeof("a")
+typeof("2020/09/10")
+typeof("")
+typeof(" ")
+typeof("NA") # missing value
+```
+
+## Special Values
+They usually remain the same after operation.  
+
+- `NULL`: a vector of no elements of length 0.
+
+```{r}
+typeof(NULL)
+```
+
+- `NA`: a missing value.
+
+```{r}
+typeof(NA)
+```
+
+- `Inf`, `-Inf`: infinite number.
+
+```{r}
+typeof(Inf)
+```
+
+- `NaN`: not a number.
+
+```{r}
+typeof(NaN)
+```
+
+Example
+
+```{r}
+x <- c(1.0, NA, 3, 4.0)
+x == NA # NA is applied to each element, and it returns just NA for each element
+```
+
+To check special values, use the following functions:  
+- `is.null()`
+- `is.na()`
+- `is.finite()`
+- `is.infinite()`
+- `is.nan()`
+
+# Coercion
+1. Explicit Coercion  
+change the data type of a vector, if possible.  
+
+- `as.logical()`
+- `as.integer()`
+- `as.double()`
+- `as.real()`
+- `as.character()`
+
+```{r}
+x <- c("1", "2", "3.0")
+typeof(x)
+as.integer(x) # no "L" but integer
+as.double(x)
+as.complex(x)
+x # they don't change the original vector
+
+# the following gives an warning and returns NA if the element is not convertible.
+y <- c("1", "abc", 3, "def", NA, Inf, "7.0")
+as.integer(y)
+
+# this won't work because of "implicit coercion"
+as.logical(x) # just returns NA for each element
+```
+
+2. Implicit Coercion  
+Hierarchy: **logical < numeric (integer < double) < complex < character**
+
+```{r}
+# different data types "double" and "complex" and "complex" dominates "double"
+typeof(c(1, 1i))
+
+z <- c(TRUE, FALSE, T, F, NA) # all elements are logical
+z[2] <- -10
+z # logical -> numeric
+z[3] <- 0.5
+z # integer -> double
+z[4] <- 0.05
+z # align decimal numbers
+z[4] <- 5i
+z # double -> complex
+z[1] <- "-2"
+z # complex -> character
+z[5] <- 20
+z # NA -> 20 (numeric) -> "20" (character)
+```
+
+# Exercises
+1) Consider the following two vectors: x and y.
+```
+x <- c(2, 4, 6, 8, 10)
+y <- c("a", "e", "i", "o", "u")
+```
+What is the output of the following R commands? (BTW: they are all valid commands). Try to answer these parts without running the code in R.
+
+a)  `y[x/x]`
+
+b)  `y[!(x > 5)]`
+
+c)  `y[x < 10 & x != 2]`
+
+d)  `y[x[-4][2]]`
+
+e)  `y[as.logical(x)]`
+
+f)  `y[6 - (x/2)]`
+
+```{r}
+x <- c(2, 4, 6, 7, 10)
+y <- c("a", "e", "i", "o", "u")
+
+# a
+y[x/x]
+
+# b
+y[!(x > 5)]
+
+# c
+y[x < 10 & x != 2]
+
+# d
+y[x[-4][2]]
+
+# e
+y[as.logical(x)]
+
+# f
+y[6 - (x/2)]
+```
+
+
+2) Consider the following R code:
+```
+# peanut butter jelly sandwich
+peanut <- TRUE
+peanut[2] <- FALSE
+yummy <- mean(peanut)
+butter <- peanut + 1L
+jelly <- tolower("JELLY")
+sandwich <- c(peanut, butter, jelly)
+```
+What is the output of the following commands? Try to answer these parts without running the code in R.
+
+a) `"jelly" != jelly`
+
+b) `peanut & butter`
+
+c) `typeof(yummy[peanut])`
+
+d) `sandwich[2]`
+
+e) `peanut[butter]`
+
+f) `peanut %in% peanut`
+
+g) `typeof(!yummy)`
+
+h) `length(list(peanut, butter, as.factor(jelly)))`
+
+```{r}
+peanut <- TRUE
+peanut[2] <- FALSE
+yummy <- mean(peanut)
+butter <- peanut + 1L
+jelly <- tolower("JELLY")
+sandwich <- c(peanut, butter, jelly)
+
+# a
+"jelly" != jelly
+
+# b
+peanut & butter
+
+# c
+typeof(yummy[peanut])
+
+# d
+sandwich[2]
+
+# e
+peanut[butter]
+
+# f
+peanut %in% peanut
+
+# g
+typeof(!yummy)
+
+# h
+length(list(peanut, butter, as.factor(jelly)))
+```
+
+
+3) Consider the following two vectors: x and y.
+```
+x <- c(1, 2, 3, 4, 5)
+y <- c("a", "b", "c", "d", "e")
+```
+Match the following commands with their corresponding output. Try to answer these parts without running the code in R.
+```
+a)  y[x == 1]              ___  "a" "b" "c" "d" "e"
+
+b)  y[x]                   ___  "e"
+
+c)  y[x < 3]               ___  character(0)
+
+d)  y[x/x]                 ___  "d"
+
+e)  y[x[5]]                ___  "c" "d" "e"
+
+f)  y['b']                 ___  NA
+
+g)  y[0]                   ___  "a" "b"
+
+h)  y[!(x < 3)]            ___  "c"
+
+i)  y[x[-2][3]]            ___  "a"
+
+j)  y[x[x[3]]]             ___  "a" "a" "a" "a" "a"
+```
+
+```{r}
+x <- c(1, 2, 3, 4, 5)
+y <- c("a", "b", "c", "d", "e")
+
+# a
+y[x == 1]
+
+# b
+y[x]
+
+# c
+y[x < 3]
+
+# d
+y[x/x]
+
+# e
+y[x[5]]
+
+# f
+y['b']
+
+# g
+y[0] # a character vector of length 0
+
+# h
+y[!(x < 3)]
+
+# i
+y[x[-2][3]]
+
+# j
+y[x[x[3]]]
+```
+
+4) Which command will fail to return the first five elements of a vector x? (assume x has more than 5 elements).
+
+a) `x[1:5]`
+
+b) `x[c(1,2,3,4,5)]`
+
+c) `head(x, n = 5)`
+
+d) `x[seq(1, 5)]`
+
+e) `x(1:5)`
+
+```{r}
+# a
+x[1:5]
+
+# b
+x[c(1, 2, 3, 4, 5)]
+
+# c
+head(x, n = 5)
+
+# d
+x[seq(1, 5)]
+
+# e (answer)
+# x(1:5) surrounding by () means applying a function
+```
+
+5) Explain the concept of atomic structures in R.
+
+It is one type of the most fundamental data structure in R that can contain only one type of data. An atomic vector is either logical, integer, numeric, complex, character or raw and can have any attributes except a dimension attribute (like matrices). I.e., a `factor` is an atomic vector, but a `matrix` or `NULL` are not. In short, this is basically equivalent to `is.atomic(x) && !is.null(x) && is.null(dim(x))`. To check if it is an atomic vector, use `is.vector()`.
+
+6) Explain the concept of vectorization a.k.a. vectorized operations.
+
+Operations occur in parallel in certain R objects (i.e. They are computed element-by-element). This allows us to write code efficiently, concisely, and easily to read than in non-vectorized languages.
