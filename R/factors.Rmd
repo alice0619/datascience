@@ -1,0 +1,104 @@
+---
+title: "Factors"
+output: pdf_document
+---
+**factor: **categorical variables
+
+```{r}
+position <- c('SG', 'PG', 'PF', 'SF', 'C')
+```
+
+Since factor $\neq$ character, the elements don't have "". `Levels` shows all categories.
+
+```{r}
+position_factor <- factor(position)
+position_factor
+```
+
+`str()` checks a data structure. Notice that the categories are assigned integers.
+
+```{r}
+class(position)
+class(position_factor)
+
+str(position_factor)
+```
+
+So its type is `integer`.
+
+```{r}
+typeof(position_factor)
+```
+
+Factor can be treated like a vector in manipulation.
+
+```{r}
+position <- factor(position)
+
+position[position == "SG"] # extract elemets whose value is "SG"
+position[position == "spectator"] # a factor vector of length 0
+position[1:3] # extract first 3 elements
+position[rep(2, 4)] # extract the second element 4 times
+```
+
+```{r}
+x <- c("c", "b", "a", "b", "c", "b")
+y <- factor(x)
+y
+```
+
+```{r}
+y[3]
+y[y == "sun"]
+length(y)
+sort(y)
+unique(y)
+```
+
+But factor is not a vector. `attributes()` returns all levels (categories) and class.
+
+```{r}
+str(y)
+is.vector(y) # factor is different from vector
+attributes(y) # shows levels and class
+```
+
+# Qualitative Variables
+- Nominal: no orders.
+  - city has no orders.
+  ```
+  cities <- c("SF", "Berkeley", "SJ", "SJ", "SF", "SF")
+  ```
+- Ordinal: with orders.
+  - rating has orders. It can be sorted like "bad" < "average" < "good".
+  ```
+  rates <- c("good", "bad", "bad", "good", "average", "good", "average", "good")
+  ```
+
+```{r}
+rates <- c("good", "bad", "bad", "good", "average", "good", "average", "good")
+
+# not ordered
+factor(rates)
+```
+
+Notice that `Levels` is sorted alphabetically as default. Set `levels` to change the order.
+
+```{r}
+# ordered levels
+rating <- factor(rates, 
+                 levels = c("bad", "average", "good"))
+
+rating
+```
+
+To give a quantative relationship, set `ordered`.
+
+```{r}
+# ordered levels with "<"
+ordered_rating <- factor(rates, 
+                  levels = c("bad", "average", "good"), 
+                  ordered = TRUE)
+ordered_rating
+```
+
