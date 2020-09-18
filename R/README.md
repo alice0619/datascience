@@ -8,3 +8,5 @@
 <a href = "https://github.com/alice0619/datascience/blob/master/R/geographical_maps.Rmd">(コード)</a>
 4. <a href = "https://github.com/alice0619/datascience/blob/master/R/vectors.pdf">ベクトル</a>
 <a href = "https://github.com/alice0619/datascience/blob/master/R/vectors.Rmd">(コード)</a>
+5. <a href = "https://github.com/alice0619/datascience/blob/master/R/factors.pdf">因子型</a>
+<a href = "https://github.com/alice0619/datascience/blob/master/R/factors.pdf">(コード)</a>
