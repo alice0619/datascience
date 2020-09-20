@@ -9,4 +9,6 @@
 4. <a href = "https://github.com/alice0619/datascience/blob/master/R/vectors.pdf">ベクトル</a>
 <a href = "https://github.com/alice0619/datascience/blob/master/R/vectors.Rmd">(コード)</a>
 5. <a href = "https://github.com/alice0619/datascience/blob/master/R/factors.pdf">因子型</a>
-<a href = "https://github.com/alice0619/datascience/blob/master/R/factors.pdf">(コード)</a>
+<a href = "https://github.com/alice0619/datascience/blob/master/R/factors.Rmd">(コード)</a>
+6. <a href = "https://github.com/alice0619/datascience/blob/master/R/matrices.pdf">行列</a>
+<a href = "https://github.com/alice0619/datascience/blob/master/R/matrices.Rmd">(コード)</a>
