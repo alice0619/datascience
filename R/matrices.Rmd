@@ -1,0 +1,345 @@
+---
+title: "Matrices and Arrays"
+output: pdf_document
+---
+```{r}
+library(dplyr)
+```
+
+Vector: 1-dimensional object  
+Matrix: 2-dimensional object  
+Array: n-dimensional object  
+
+# Making Matrix and Array
+- ` dim()`
+- `matrix()`
+- `array()`  
+`matrix()` and `array()` are commonly used.
+
+```{r}
+x <- 1:8
+
+# 2x4
+dim(x) <- c(2, 4)
+x
+```
+
+```{r}
+x <- 1:8
+
+# 2x2x2
+dim(x) <- c(2, 2, 2)
+x
+```
+
+```{r}
+# 3x4
+matrix(1:12, nrow = 3, ncol = 4)
+```
+
+```{r}
+# 2x6
+matrix(1:12, nrow = 2, ncol = 6, 
+       byrow = TRUE, # fill elements from left to right
+       dimnames = list(c("A", "B"), c("col1", "col2", "col3", "col4", "col5", "col6"))) # labels
+```
+
+```{r}
+# 2x2x2
+array(1:12, dim = c(2, 2, 3))
+```
+
+They will give an error if the number of elements in vector doesn't match the number of cells.
+
+# Extract Elements of Matrices
+
+- `name_of_matrix[row_index, col_index]`: specific cell.
+- `name_of_matrix[row_index,]`: specific row.
+- `name_of_matrix[, col_index]`: specific column.
+
+```{r}
+mat <- matrix(1:12, nrow = 3, ncol = 4)
+mat
+```
+
+```{r}
+# first row, second column
+mat[1, 2]
+```
+
+```{r}
+# second row
+mat[2,]
+```
+
+```{r}
+# third column
+mat[, 3]
+```
+
+```{r}
+# odd rows, even columns
+mat[seq(1, 3, by = 2), seq(2, 4, by = 2)]
+```
+
+```{r}
+# no second row, no first column
+mat[-2, -1]
+```
+
+# Binding Rows and Columns
+
+- `rbind()`: binds rows.
+- `cbind()`: binds columns.
+
+```{r}
+mat2 <- matrix(1:8, nrow = 2, ncol = 4)
+mat2
+```
+
+```{r}
+# combine two matrices by row
+rbind(mat, mat2)
+```
+
+```{r}
+mat3 <- matrix(1:6, nrow = 3, ncol =2)
+mat3
+```
+
+
+```{r}
+# combine two matrices by column
+cbind(mat, mat3)
+```
+
+# Mathematical Operation on Matrices
+
+1. Transpose $X^T$: `t()`  
+$X_{n \times m} \Rightarrow X_{m \times n}$
+
+```{r}
+# mat is 3x4 matrix
+# its transpose is 4x3 matrix
+t(mat)
+```
+
+2. Addition  
+Matrices must be the same dimension.  
+$\begin{bmatrix} 1 & 3 & 5 \\ 2 & 4 & 6 \end{bmatrix} + \begin{bmatrix} 7 & 9 & 8 \\ 8 & 7 & 9 \end{bmatrix} = \begin{bmatrix} 8 & 12 & 13\\ 10 & 11 & 15\end{bmatrix}$
+
+```{r}
+A <- matrix(1:6, 2, 3)
+B <- matrix(7:9, 2, 3)
+
+A + B
+```
+
+3. Scalar Multiplication  
+
+```{r}
+1/2 * A
+```
+
+4. Matrices Multiplication: `%*%`
+$X_{a \times b} \times X_{b \times c} = X_{a \times c}$ 
+
+```{r}
+C <- matrix(7:9, 3, 2)
+A %*% C
+```
+
+5. Multiplication by Elements: `*`
+Matrices must be the same dimension.  
+
+```{r}
+A * A
+```
+
+6. Cross Product $X^TY$ or $XY^T$: `crossprod()`, `tcrossprod()`  
+
+```{r}
+# t(A) %*% A
+crossprod(A, A)
+```
+
+```{r}
+# A %*% t(A)
+tcrossprod(A, A)
+```
+
+7. Linear Combination  
+Multiplication by vector and matrix.  
+
+```{r}
+X <- matrix(1:12, 3, 4)
+a <- seq(0.25, 1, by = 0.25)
+b <- 1:3
+
+X %*% a
+```
+
+```{r}
+b %*% X
+```
+
+# Other Mathematical Functions of Matrices
+1. `det()`: Find determinant.
+
+```{r}
+X2 <- rbind(c(-1,4,2), c(3,-2,1), c(1,1,1))
+det(X2)
+```
+
+2. `diag()`: Extract or replace the diagonal elements.
+
+```{r}
+# 3x3 identity matrix
+diag(3)
+```
+
+```{r}
+# 3x3 diagonal elements 1, 2, 3
+diag(1:3)
+```
+
+```{r}
+# change diagonal elements to 5
+I <- diag(3)
+diag(I) <- 5
+I
+```
+
+3. `solve()`: Solve the system of equations.  
+
+```{r}
+X3 <- rbind(c(-1,4,2), c(3,-2,1), c(1,1,1))
+c <- c(1,2,-1)
+
+solve(X3, c)
+```
+
+4. `eigen()`: Eigen decomposition.
+
+```{r}
+v <- matrix(c(8, 4, 1, 5), 2, 2)
+v
+eigen(v)
+```
+
+5. `svd()`: singular value decomposition. 
+
+6. `qr()`: QR decomposition.
+
+7. `chol()`: Choleski decomposition.
+
+# Exercises
+1) Given the following vector `h`p, how would you create the matrix displayed below?
+
+```{r}
+# vector of names
+hp <- c("Harry", "Potter", "Ron", "Weasley", "Hermione", "Granger")
+```
+
+```
+     [,1]     [,2]      
+[1,] "Harry"  "Weasley"   
+[2,] "Potter" "Hermione"  
+[3,] "Ron"    "Granger"   
+```
+
+```{r}
+matrix(hp, 3, 2)
+```
+
+2) Given the following vector `sw`, how would you create the matrix displayed below?
+
+```{r}
+# vector of names
+sw <- c("Luke", "Skywalker", "Leia", "Organa", "Han", "Solo")
+```
+
+```
+     [,1]   [,2]         
+[1,] "Luke" "Skywalker"  
+[2,] "Leia" "Organa"     
+[3,] "Han"  "Solo"       
+```
+
+```{r}
+matrix(sw, 3, 2, byrow = TRUE)
+```
+
+3) Consider the following vectors `a1`, `a2`, `a3`:
+
+```{r}
+a1 <- c(2, 3, 6, 7, 10)
+a2 <- c(1.88, 2.05, 1.70, 1.60, 1.78)
+a3 <- c(80, 90, 70, 50, 75)
+```
+
+Column-bind the vectors a1, a2, a3 to form the following matrix `M`:
+
+```
+#>   a1   a2 a3  
+#> 1  2 1.88 80  
+#> 2  3 2.05 90  
+#> 3  6 1.70 70  
+#> 4  7 1.60 50  
+#> 5 10 1.78 75  
+```
+```{r}
+M <- cbind(a1, a2, a3)
+rownames(M) <- 1:5
+M
+```
+
+4) Consider the following vectors `b1`, `b2`, `b3`:
+
+```{r}
+b1 <- c(1, 4, 5, 8, 9)
+b2 <- c(1.22, 1.05, 3.60, 0.40, 2.54)
+b3 <- c(20, 40, 30, 80, 100)
+```
+
+Row-bind the vectors b1, b2, b3 to form the following matrix `M2`:
+
+```
+#>        1     2    3    4      5  
+#> b1  1.00  4.00  5.0  8.0   9.00  
+#> b2  1.22  1.05  3.6  0.4   2.54  
+#> b3 20.00 40.00 30.0 80.0 100.00  
+```
+
+```{r}
+M2 <- rbind(b1, b2, b3)
+colnames(M2) <- 1:5
+M2
+```
+
+5) With matrices `M` and `M2` created above, use the matrix-multiplication operator `%*%` and the transpose function `t()` to compute the matrix products:
+
+a. MM2
+
+```{r}
+M %*% M2
+```
+
+b. M2M
+
+```{r}
+M2 %*% M
+```
+
+c. $M^TM2^T$
+
+```{r}
+t(M) %*% t(M2)
+```
+
+d. $M2^TM^T$
+
+```{r}
+t(M2) %*% t(M)
+```
+
