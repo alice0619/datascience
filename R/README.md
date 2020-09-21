@@ -12,3 +12,5 @@
 <a href = "https://github.com/alice0619/datascience/blob/master/R/factors.Rmd">(コード)</a>
 6. <a href = "https://github.com/alice0619/datascience/blob/master/R/matrices.pdf">行列</a>
 <a href = "https://github.com/alice0619/datascience/blob/master/R/matrices.Rmd">(コード)</a>
+7. <a href = "https://github.com/alice0619/datascience/blob/master/R/lists.pdf">リスト</a>
+<a href = "https://github.com/alice0619/datascience/blob/master/R/lists.Rmd">(コード)</a>
