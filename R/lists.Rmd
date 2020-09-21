@@ -1,0 +1,197 @@
+---
+title: "Lists"
+output: pdf_document
+---
+
+# Lists
+- Atomic Structures
+  - 1D: Vector: Only one type of data per vector
+  - 2D: Matrix
+  - nD: Array
+- Non-Atomic Structures
+  - 1D: List: Can contain any other type of data structure
+  - 2D: Data Frame
+  
+# Create a list: `list()`
+
+```{r}
+lst <- list(1:3, matrix(1:9, 3, 3), list(1:2, c(TRUE, FALSE), c("a", "b")))
+lst
+```
+
+To name each element of a list, 
+
+```{r}
+lst <- list("elem1" = 1:3, 
+            "elem2" = matrix(1:9, 3, 3), 
+            "elem3" = list(1:2, c(TRUE, FALSE), c("a", "b")))
+lst
+```
+
+# Access to Elements of a List
+- Single Brackets: Access to elements of a list, but not access to its object.
+
+```{r}
+lst[1]
+```
+
+```{r}
+lst[2]
+```
+
+```{r}
+lst[3]
+```
+
+- Double Brackets: Access to an object of an element of a list.
+
+```{r}
+lst[[1]]
+```
+
+```{r}
+lst[[3]]
+```
+
+Combine single brackets and double brackets to access to a specific element of an object of an element of a list.
+
+```{r}
+lst[[1]][2]
+```
+
+```{r}
+lst[[3]][2]
+```
+
+```{r}
+lst[[3]][[2]][1]
+```
+
+- Dollar Signs: Only if a list has names for its elements.
+
+```{r}
+lst$elem2
+```
+
+```{r}
+lst$elem2[2, 2]
+```
+
+# Adding Elements to a List
+- `name_of_list[[new_index]] <- new_element`
+
+```{r}
+lst[[4]] <- c(T, F, T, F)
+lst
+```
+
+- `name_of_list$new_name <- new_element`
+
+```{r}
+lst$elem5 <- 'nuevo'
+lst
+```
+
+# Deleting Elements of a List
+Use `NULL`.  
+- `name_of_list[[index]] <- NULL`
+
+```{r}
+lst[[4]] <- NULL
+lst
+```
+
+- `name_of_list$name_of_elem <- NULL`
+
+```{r}
+lst$elem5 <- NULL
+lst
+```
+
+# Exercises
+1) How would you create a list with your first name, middle name, and last name? For example, something like:
+
+```
+$first
+[1] "Gaston"
+
+$middle
+NULL
+
+$last
+[1] "Sanchez"
+```
+
+```{r}
+list("first" = "Gaston", "middle" = NULL, "last" = "Sanchez")
+```
+
+2) Consider an R list `student` containing the following elements:
+
+```
+$name
+[1] "Luke Skywalker"
+
+$major_minor
+              major               minor 
+     "jedi studies" "imperial policies" 
+
+$gpa
+[1] 4
+
+$grades
+           course score
+1       force-101   9.3
+2    light-sabers  10.0
+3 jedi-literature   8.5
+```
+
+What is the output of the following commands? Try to guess the answer without running the code.
+
+a. `student$grades$semester <- 4`
+
+b. `sum(student[[2]] == "sith philosophy")`
+
+c. `student["sid"] <- as.integer("123456")`
+
+d. `mean(student[[4]][1:3,2], na.rm = TRUE)`
+
+e. `student[[4]] <- student$grades[c(FALSE, TRUE, TRUE), ]`
+
+```{r}
+student <- list("name" = "Luke Skywalker", 
+                "major_minor" = c("jedi studies", "imperial policies"), 
+                "gpa" = 4, 
+                "grades" = data.frame("course" = c("force-101", "light-sabers", "jedi-literature"), 
+                                      "score" = c(9.3, 10.0, 8.5)))
+student
+```
+
+```{r}
+# a 
+student$grades$semester <- 4
+student
+```
+
+```{r}
+# b
+sum(student[[2]] == "sith philosophy")
+```
+
+```{r}
+# c
+student["sid"] <- as.integer("123456")
+student
+```
+
+```{r}
+# d
+mean(student[[4]][1:3,2], na.rm = TRUE)
+```
+
+```{r}
+# e
+student[[4]] <- student$grades[c(FALSE, TRUE, TRUE), ]
+student
+```
+
