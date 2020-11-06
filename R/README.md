@@ -14,5 +14,5 @@
 <a href = "https://github.com/alice0619/datascience/blob/master/R/matrices.Rmd">(コード)</a>
 7. <a href = "https://github.com/alice0619/datascience/blob/master/R/lists.pdf">リスト</a>
 <a href = "https://github.com/alice0619/datascience/blob/master/R/lists.Rmd">(コード)</a>
-8. <a href = "https://github.com/alice0619/datascience/blob/master/R/unix.pdf">リスト</a>
+8. <a href = "https://github.com/alice0619/datascience/blob/master/R/unix.pdf">UNIXト</a>
 <a href = "https://github.com/alice0619/datascience/blob/master/R/unix.Rmd">(コード)</a>
