@@ -1,6 +1,3 @@
-# Project 2
-# Alice Hayashi
-
 library(shiny)
 library(dplyr)
 library(ggplot2)
