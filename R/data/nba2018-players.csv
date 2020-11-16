@@ -1,0 +1,536 @@
+player,team,position,height,weight,age,experience,college,salary,games,minutes,points3,points2,points1,points,rebounds,assists,steals,blocks,turnovers,fouls
+Alfonzo McKinnie,TOR,SF,80,215,25,0,University of Wisconsin-Green Bay,815615,14,53,3,5,2,21,7,1,1,1,3,8
+C.J. Miles,TOR,SF,78,225,30,12,,7936509,70,1337,164,63,81,699,152,55,37,21,39,134
+Delon Wright,TOR,PG,77,183,25,2,University of Utah,1645200,69,1433,56,145,97,555,198,200,72,33,78,81
+DeMar DeRozan,TOR,SG,79,221,28,8,University of Southern California,27739975,80,2711,89,556,461,1840,315,417,85,22,175,151
+Fred VanVleet,TOR,PG,72,195,23,1,Wichita State University,1312611,76,1520,108,124,84,656,184,243,68,19,74,130
+Jakob Poeltl,TOR,C,84,248,22,1,University of Utah,2825640,82,1524,1,252,60,567,393,57,39,100,85,212
+Jonas Valanciunas,TOR,C,84,265,25,5,,15460675,77,1727,30,360,170,980,660,81,29,69,115,192
+Kyle Lowry,TOR,PG,72,205,31,11,Villanova University,28703704,78,2510,238,165,223,1267,434,537,85,19,183,192
+Lorenzo Brown,TOR,PG,77,189,27,3,North Carolina State University,0,14,139,2,12,2,32,15,13,5,0,3,7
+Lucas Nogueira,TOR,C,84,241,25,3,,2947305,49,418,5,44,19,122,87,22,23,43,16,49
+Malachi Richardson,TOR,SG,78,205,22,1,Syracuse University,1504560,1,5,0,1,0,2,1,0,0,0,0,0
+Malcolm Miller,TOR,SF,79,210,24,0,College of the Holy Cross,0,15,126,8,5,4,38,15,3,1,2,5,10
+Nigel Hayes,TOR,SF,80,254,23,0,University of Wisconsin,92160,2,6,2,0,0,6,0,0,0,0,1,0
+Norman Powell,TOR,SG,76,215,24,2,"University of California, Los Angeles",1471382,70,1062,53,97,32,385,119,89,37,16,66,111
+OG Anunoby,TOR,SF,80,232,20,0,Indiana University,1645200,74,1481,73,90,39,438,184,55,52,14,45,130
+Pascal Siakam,TOR,PF,81,230,23,1,New Mexico State University,1312611,81,1679,29,224,54,589,364,159,62,42,67,166
+Serge Ibaka,TOR,PF,82,235,28,8,,20061729,76,2093,107,272,94,959,478,62,29,99,90,209
+Abdel Nader,BOS,SF,78,230,24,0,"Northern Illinois University, Iowa State University",1167333,48,522,23,27,23,146,71,26,15,10,34,45
+Al Horford,BOS,C,82,245,31,10,University of Florida,27734405,72,2277,97,271,94,927,530,339,43,78,132,138
+Aron Baynes,BOS,C,82,260,31,5,Washington State University,4328000,81,1485,3,207,59,482,434,93,22,51,80,200
+Daniel Theis,BOS,C,81,215,25,0,,815615,63,936,18,108,61,331,274,56,30,48,56,157
+Gordon Hayward,BOS,SF,80,226,27,7,Butler University,29727900,1,5,0,1,0,2,1,0,0,0,0,1
+Greg Monroe,BOS,C,83,265,27,7,Georgetown University,5.00E+06,26,496,0,105,55,265,165,59,28,17,48,48
+Guerschon Yabusele,BOS,PF,79,260,22,0,,2247480,33,235,12,14,15,79,52,16,4,5,12,23
+Jabari Bird,BOS,SG,78,197,23,0,University of California,0,13,115,3,12,6,39,19,8,3,1,8,7
+Jarell Eddie,BOS,SF,79,218,26,2,Virginia Polytechnic Institute and State University,83129,2,6,0,0,0,0,1,0,1,0,0,0
+Jaylen Brown,BOS,SG,79,225,21,1,University of California,4956480,70,2152,121,252,150,1017,346,114,70,26,124,181
+Jayson Tatum,BOS,SF,80,205,19,0,Duke University,5645400,80,2438,105,292,213,1112,402,128,83,58,114,170
+Jonathan Gibson,BOS,PG,74,185,30,1,New Mexico State University,44495,4,40,6,8,0,34,3,4,0,0,3,5
+Kadeem Allen,BOS,PG,75,192,25,0,University of Arizona,0,18,107,0,6,7,19,11,12,3,2,9,15
+Kyrie Irving,BOS,PG,75,193,25,6,Duke University,18868625,60,1931,166,368,232,1466,227,306,65,17,140,122
+Marcus Morris,BOS,PF,81,235,28,6,University of Kansas,5.00E+06,54,1447,86,176,124,734,289,72,35,12,65,100
+Marcus Smart,BOS,SG,76,220,23,3,Oklahoma State University,4538020,54,1614,75,114,97,550,189,259,71,23,129,133
+Semi Ojeleye,BOS,PF,79,241,23,0,Southern Methodist University,1291892,73,1150,40,25,25,195,161,20,21,4,25,91
+Shane Larkin,BOS,PG,71,175,25,3,University of Miami,1471382,54,775,31,53,32,231,92,98,29,2,33,58
+Terry Rozier,BOS,PG,74,190,23,2,University of Louisville,1988520,80,2068,153,163,115,900,376,232,80,19,80,123
+Xavier Silas,BOS,SG,77,205,30,1,"University of Colorado, Northern Illinois University",74159,2,7,0,0,0,0,2,0,1,0,0,1
+Amir Johnson,PHI,C,81,240,30,12,,1.10E+07,74,1171,10,130,52,342,330,118,45,44,55,192
+Ben Simmons,PHI,PG,82,230,21,0,Louisiana State University,6168840,81,2732,0,544,191,1279,659,661,140,70,278,211
+Dario Saric,PHI,PF,82,223,23,1,,2422560,78,2310,157,246,178,1141,520,202,51,20,148,160
+Demetrius Jackson,PHI,PG,73,201,23,1,University of Notre Dame,0,3,17,1,2,1,8,1,4,1,0,1,1
+Ersan Ilyasova,PHI,PF,82,235,30,9,,357454,23,554,30,63,33,249,154,39,17,9,29,65
+Furkan Korkmaz,PHI,SG,79,185,20,0,,1465920,14,80,5,3,2,23,11,4,2,1,2,12
+J.J. Redick,PHI,SG,76,190,33,11,Duke University,2.30E+07,70,2116,193,211,197,1198,178,210,35,6,103,123
+Jacob Pullen,PHI,PG,73,200,28,0,Kansas State University,0,3,6,0,1,0,2,0,0,0,0,1,0
+James Michael McAdoo,PHI,PF,81,230,25,3,University of North Carolina,0,3,18,2,0,2,8,2,0,0,1,1,1
+James Young,PHI,SG,78,215,22,3,University of Kentucky,0,6,61,3,2,4,17,2,2,0,0,1,4
+Jerryd Bayless,PHI,SG,75,200,29,9,University of Arizona,9.00E+06,39,925,54,55,35,307,80,54,23,6,46,91
+Joel Embiid,PHI,C,84,250,23,1,University of Kansas,6100266,63,1912,66,444,359,1445,690,199,40,111,234,209
+Justin Anderson,PHI,SF,78,228,24,2,University of Virginia,1579440,38,519,34,53,28,236,93,25,15,7,16,54
+Larry Drew,PHI,PG,74,180,27,1,"University of North Carolina, University of California, Los Angeles",74159,3,15,0,1,0,2,1,2,0,0,1,2
+Marco Belinelli,PHI,SG,77,210,31,10,,776217,28,737,57,81,47,380,51,45,20,9,40,50
+Markelle Fultz,PHI,SG,76,195,19,0,University of Washington,7026240,14,253,0,45,10,100,43,53,12,4,17,22
+Richaun Holmes,PHI,C,82,245,24,2,Bowling Green State University,1471382,48,746,4,131,37,311,211,61,20,29,25,97
+Robert Covington,PHI,SF,81,215,27,4,Tennessee State University,16698103,80,2532,203,142,116,1009,433,156,137,72,126,238
+T.J. McConnell,PHI,PG,74,200,25,2,"Duquesne University, University of Arizona",1471382,76,1706,27,183,31,478,226,303,92,13,112,122
+Timothe Luwawu-Cabarrot,PHI,SF,78,205,22,1,,1386600,52,807,53,47,46,299,72,54,12,5,38,97
+Trevor Booker,PHI,PF,80,228,30,7,Clemson University,8725000,33,494,2,59,32,156,122,27,16,11,20,50
+Ante Zizic,CLE,C,83,250,21,0,,1645200,32,214,0,49,21,119,60,5,2,13,11,30
+Cedi Osman,CLE,SF,80,210,22,0,,2642857,61,672,32,58,26,238,120,41,22,3,32,78
+Derrick Rose,CLE,PG,75,190,29,8,University of Memphis,1356709,16,308,6,52,35,157,29,26,3,4,28,14
+George Hill,CLE,PG,75,188,31,9,Indiana University-Purdue University Indianapolis,2.00E+07,24,669,27,56,33,226,64,67,22,15,28,53
+J.R. Smith,CLE,SG,78,225,32,13,,13760000,80,2244,143,97,39,662,235,141,68,11,81,161
+Jeff Green,CLE,PF,81,235,31,9,Georgetown University,2116955,78,1828,53,242,203,846,246,99,41,34,75,149
+John Holland,CLE,SF,77,205,29,1,Boston University,0,24,174,11,6,9,54,24,5,7,2,8,10
+Jordan Clarkson,CLE,SG,77,194,25,3,"University of Tulsa, University of Missouri",11562500,28,632,44,87,47,353,58,48,19,3,32,44
+Jose Calderon,CLE,PG,75,200,36,12,,1471382,57,914,45,48,24,255,84,117,27,2,41,81
+Kendrick Perkins,CLE,C,82,270,33,13,,13156,1,15,0,1,1,3,1,2,1,0,1,1
+Kevin Love,CLE,C,82,251,29,9,"University of California, Los Angeles",22642350,59,1651,137,197,234,1039,546,103,43,24,90,120
+Kyle Korver,CLE,SG,79,212,36,14,Creighton University,7.00E+06,73,1574,164,58,64,672,165,88,31,27,55,130
+Larry Nance,CLE,C,81,230,25,2,University of Wyoming,1471382,24,499,1,87,36,213,168,25,29,18,10,59
+LeBron James,CLE,PF,80,250,33,14,,33285709,82,3026,149,708,388,2251,709,747,116,71,347,136
+London Perrantes,CLE,PG,74,200,23,0,University of Virginia,0,14,66,0,2,3,7,4,5,2,1,1,6
+Rodney Hood,CLE,SG,80,206,25,3,"Mississippi State University, Duke University",2386864,21,532,25,63,26,227,54,30,15,5,7,41
+Tristan Thompson,CLE,C,81,238,26,6,University of Texas at Austin,16400000,53,1072,0,132,43,307,352,33,16,17,36,102
+Al Jefferson,IND,C,82,289,33,13,,9769821,36,484,0,111,30,252,143,30,16,23,21,66
+Alex Poythress,IND,PF,79,238,24,1,University of Kentucky,778668,25,104,4,7,0,26,17,2,3,1,2,16
+Ben Moore,IND,PF,79,203,22,0,Southern Methodist University,0,2,9,0,0,0,0,1,1,0,0,0,4
+Bojan Bogdanovic,IND,SF,80,216,28,3,,10500000,80,2464,155,249,178,1141,270,119,55,8,106,129
+Cory Joseph,IND,PG,75,193,26,6,University of Texas at Austin,7630000,82,2210,67,189,70,649,263,260,80,18,87,141
+Damien Wilkins,IND,SF,78,225,38,9,"North Carolina State University, University of Georgia",1016617,19,152,4,9,3,33,16,9,2,1,5,7
+Darren Collison,IND,PG,72,175,30,8,"University of California, Los Angeles",1.00E+07,69,2018,96,220,127,855,178,368,92,15,86,122
+Domantas Sabonis,IND,C,83,240,21,1,Gonzaga University,2550000,74,1810,13,327,168,861,572,151,40,32,137,220
+Edmond Sumner,IND,PG,78,176,22,0,Xavier University,0,1,2,0,1,0,2,1,0,0,0,0,1
+Glenn Robinson,IND,SF,78,222,24,3,University of Michigan,1524305,23,338,14,22,9,95,37,17,13,1,5,14
+Ike Anigbogu,IND,C,82,252,19,0,"University of California, Los Angeles",950000,11,30,0,4,5,13,9,0,1,3,2,1
+Joe Young,IND,PG,74,180,25,2,"University of Houston, University of Oregon",1471382,53,558,25,55,22,207,63,39,14,1,26,39
+Lance Stephenson,IND,SG,77,230,27,7,University of Cincinnati,4180000,82,1850,67,236,84,757,424,235,46,17,131,177
+Myles Turner,IND,C,83,243,21,2,University of Texas at Austin,2569920,65,1836,56,250,160,828,417,87,38,118,96,186
+T.J. Leaf,IND,PF,82,222,20,0,"University of California, Los Angeles",2028360,53,459,18,46,10,156,82,9,5,4,10,45
+Thaddeus Young,IND,PF,80,221,29,10,Georgia Institute of Technology,14796348,81,2607,58,363,55,955,512,152,135,36,105,175
+Trey McKinney-Jones,IND,SG,77,214,27,0,University of Miami,46080,1,1,0,0,0,0,0,0,0,0,0,0
+Victor Oladipo,IND,SG,76,210,25,4,Indiana University,2.10E+07,75,2552,161,479,294,1735,390,323,177,57,219,175
+Bam Adebayo,MIA,C,82,243,20,0,University of Kentucky,2490360,69,1368,0,174,129,477,381,101,32,41,66,138
+Derrick Jones,MIA,SF,79,190,20,1,"University of Nevada, Las Vegas",0,14,212,3,16,11,52,34,6,3,9,6,22
+Derrick Walton,MIA,PG,73,189,22,0,University of Michigan,0,16,147,7,1,6,29,16,16,7,3,2,7
+Dion Waiters,MIA,SG,76,225,26,5,Syracuse University,1.10E+07,30,918,52,111,51,429,77,113,23,9,70,61
+Dwyane Wade,MIA,SG,76,220,36,14,Marquette University,1471382,21,467,9,92,41,252,71,65,19,15,48,40
+Goran Dragic,MIA,PG,75,190,31,9,,17000450,75,2378,111,373,217,1296,307,359,63,12,166,180
+Hassan Whiteside,MIA,C,84,265,28,5,Marshall University,23775506,54,1364,2,310,128,754,618,54,37,94,92,131
+James Johnson,MIA,PF,81,250,30,8,Wake Forest University,13954000,73,1943,57,252,113,788,358,280,70,51,141,192
+Jordan Mickey,MIA,PF,80,235,23,2,Louisiana State University,1471382,23,284,2,37,13,93,81,9,6,10,18,36
+Josh Richardson,MIA,SF,78,200,24,2,University of Tennessee,1471382,81,2689,127,272,120,1045,285,231,121,75,140,199
+Justise Winslow,MIA,PF,79,225,21,2,Duke University,2705040,68,1680,49,158,66,529,370,148,54,33,77,140
+Kelly Olynyk,MIA,PF,84,238,26,4,Gonzaga University,10607169,76,1779,106,210,134,872,431,207,62,35,147,222
+Luke Babbitt,MIA,SF,81,225,28,7,"University of Nevada, Reno",1974159,13,145,11,0,0,33,15,5,1,2,4,7
+Matt Williams,MIA,SG,77,210,24,0,University of Central Florida,0,3,11,1,1,0,5,1,0,0,0,1,1
+Rodney McGruder,MIA,SG,76,205,26,1,Kansas State University,1312611,18,299,15,21,4,91,32,17,8,3,4,21
+Tyler Johnson,MIA,PG,76,186,25,3,"California State University, Fresno",5881260,72,2052,119,190,106,843,248,165,60,34,81,148
+Udonis Haslem,MIA,C,80,235,37,14,University of Florida,1471382,14,72,1,2,1,8,10,5,0,2,2,3
+Wayne Ellington,MIA,SG,76,200,30,8,University of North Carolina,6270000,77,2041,227,58,67,864,218,79,53,8,52,94
+Brandon Jennings,MIL,PG,73,170,28,8,,297169,14,205,9,18,10,73,31,44,6,4,18,11
+D.J. Wilson,MIL,PF,82,234,21,0,University of Michigan,2135040,22,71,2,7,1,21,10,3,3,1,4,7
+DeAndre Liggins,MIL,SG,78,209,29,4,University of Kentucky,757427,31,480,11,11,2,57,49,27,27,10,13,61
+Eric Bledsoe,MIL,PG,73,205,28,7,University of Kentucky,14500000,71,2239,121,331,241,1266,277,361,145,40,206,179
+Gary Payton,MIL,PG,75,190,25,1,Oregon State University,0,12,106,2,11,2,30,17,9,3,1,3,17
+Giannis Antetokounmpo,MIL,PF,83,222,23,4,,22471910,75,2756,43,699,487,2014,753,361,109,106,223,231
+Jabari Parker,MIL,PF,80,250,22,3,Duke University,6782392,31,743,31,129,40,391,151,59,25,10,45,50
+Jason Terry,MIL,SG,74,185,40,18,University of Arizona,1471382,51,814,40,19,8,166,48,59,42,13,25,52
+Joel Bolomboy,MIL,PF,81,235,24,1,Weber State University,0,6,38,0,3,3,9,10,0,2,0,2,3
+John Henson,MIL,C,83,229,27,5,University of North Carolina,11422536,76,1970,1,286,90,665,513,114,45,109,84,202
+Khris Middleton,MIL,SF,80,234,26,5,Texas A&M University,14100000,82,2982,146,447,320,1652,429,328,119,21,191,270
+Malcolm Brogdon,MIL,PG,77,215,25,1,University of Virginia,1312611,48,1436,62,182,75,625,156,152,41,13,66,128
+Marshall Plumlee,MIL,C,84,250,25,1,Duke University,0,8,52,0,1,12,14,17,2,0,1,3,10
+Matthew Dellavedova,MIL,PG,76,198,27,4,Saint Mary's College of California,9607500,38,712,29,26,25,164,64,145,14,0,49,67
+Mirza Teletovic,MIL,PF,81,242,32,5,,10500000,10,159,21,4,0,71,23,10,4,1,7,14
+Sean Kilpatrick,MIL,SG,76,210,28,3,University of Cincinnati,789725,23,205,13,18,18,93,25,15,5,1,9,15
+Shabazz Muhammad,MIL,SG,78,223,25,4,"University of California, Los Angeles",324203,11,117,3,34,17,94,31,7,4,1,1,7
+Sterling Brown,MIL,SG,77,225,22,0,Southern Methodist University,815615,54,776,32,50,21,217,143,25,31,13,25,80
+Thon Maker,MIL,C,85,216,20,1,,2684160,74,1238,31,99,65,356,225,46,38,53,44,162
+Tony Snell,MIL,SG,79,200,26,4,University of New Mexico,9821429,75,2053,108,77,38,516,141,98,47,28,36,115
+Tyler Zeller,MIL,C,84,253,28,5,University of North Carolina,1709538,24,406,0,62,17,141,111,19,7,14,12,48
+Xavier Munford,MIL,SG,74,180,25,1,University of Rhode Island,0,6,21,0,1,1,3,1,4,1,0,2,4
+Bradley Beal,WAS,SG,77,207,24,5,University of Florida,23775506,82,2977,199,484,292,1857,363,373,96,36,214,160
+Chris McCullough,WAS,PF,83,200,22,2,Syracuse University,1471382,19,90,1,17,9,46,25,4,0,5,2,8
+Devin Robinson,WAS,SF,80,190,22,0,University of Florida,0,1,13,0,1,0,2,5,0,1,0,0,2
+Ian Mahinmi,WAS,C,83,250,31,9,,16661641,77,1145,0,138,90,366,312,53,38,42,100,230
+Jason Smith,WAS,C,84,245,31,9,Colorado State University,5225000,33,285,4,41,19,113,53,14,3,13,16,44
+Jodie Meeks,WAS,SG,76,210,30,8,University of Kentucky,3290000,77,1119,72,85,101,487,126,70,29,4,37,55
+John Wall,WAS,PG,76,195,27,7,University of Kentucky,18063850,41,1410,62,218,175,797,150,393,57,45,158,80
+Kelly Oubre,WAS,SF,79,205,22,2,University of Kansas,2093040,81,2231,126,192,191,953,363,98,80,35,90,234
+Marcin Gortat,WAS,C,83,240,33,10,,12782609,82,2075,0,290,110,690,623,151,40,61,99,175
+Markieff Morris,WAS,PF,82,245,28,6,University of Kansas,8.00E+06,73,1968,76,254,105,841,409,142,56,38,127,216
+Mike Scott,WAS,PF,80,237,29,5,University of Virginia,1471382,76,1406,66,210,50,668,247,80,23,10,79,148
+Otto Porter,WAS,SF,80,198,24,4,Georgetown University,24773250,77,2432,138,307,106,1134,492,157,116,41,75,151
+Ramon Sessions,WAS,PG,75,190,31,10,"University of Nevada, Reno",390706,15,225,6,19,32,88,20,50,7,1,15,15
+Tim Frazier,WAS,PG,73,170,27,3,Pennsylvania State University,2.00E+06,59,838,17,51,23,176,115,194,47,7,57,97
+Tomas Satoransky,WAS,SG,79,210,26,1,,3.00E+06,73,1643,47,154,75,524,233,286,52,15,83,131
+Andre Drummond,DET,C,83,279,24,5,University of Connecticut,23775506,78,2625,0,466,239,1171,1247,237,114,127,200,250
+Anthony Tolliver,DET,PF,80,240,32,9,Creighton University,3290000,79,1757,159,60,106,703,241,90,32,21,58,144
+Blake Griffin,DET,PF,82,251,28,7,University of Oklahoma,29727900,25,831,47,134,87,496,166,155,11,9,66,61
+Dwight Buycks,DET,PG,75,190,28,2,Marquette University,748160,29,427,15,67,36,215,41,59,19,2,39,39
+Eric Moreland,DET,PF,82,238,26,2,Oregon State University,1739333,67,805,0,66,11,143,278,78,31,51,42,116
+Henry Ellenson,DET,PF,83,245,21,1,Marquette University,1780800,38,329,20,33,25,151,81,20,5,0,18,22
+Ish Smith,DET,PG,72,175,29,7,Wake Forest University,6.00E+06,82,2043,35,354,81,894,224,360,64,20,108,140
+Jameer Nelson,DET,PG,72,190,35,13,Saint Joseph's University,1429818,7,116,1,10,3,26,8,23,4,1,11,14
+James Ennis,DET,SF,79,210,27,3,"California State University, Long Beach",3028410,27,551,21,53,33,202,67,22,15,6,18,53
+Jon Leuer,DET,PF,82,228,28,6,University of Wisconsin,10497319,8,136,0,15,13,43,32,5,1,3,7,16
+Kay Felder,DET,PG,69,176,22,1,Oakland University,0,2,6,0,1,0,2,4,0,0,0,1,0
+Langston Galloway,DET,SG,74,200,26,3,Saint Joseph's University,6666667,58,863,75,51,33,360,92,58,35,5,18,39
+Luis Montero,DET,SG,79,185,24,1,Westchester CC,0,2,8,0,0,0,0,2,0,0,0,2,0
+Luke Kennard,DET,SG,78,206,21,0,Duke University,2759280,73,1463,81,125,65,558,176,124,44,13,69,86
+Reggie Bullock,DET,SF,79,205,26,4,University of North Carolina,2500000,62,1732,125,142,39,698,154,95,47,13,47,70
+Reggie Hearn,DET,SG,77,210,26,0,Northwestern University,0,3,7,1,0,0,3,0,0,0,0,0,0
+Reggie Jackson,DET,PG,75,208,27,6,Boston College,1.60E+07,45,1201,52,194,112,656,125,238,27,4,99,87
+Stanley Johnson,DET,SF,79,245,21,2,University of Arizona,3097800,69,1894,67,143,112,599,252,112,95,14,77,169
+Cody Zeller,CHO,C,84,240,25,4,Indiana University,12584270,33,627,2,83,61,233,177,31,14,21,33,81
+Dwayne Bacon,CHO,SG,78,222,22,0,Florida State University,815615,53,713,11,61,20,175,124,38,16,2,23,46
+Dwight Howard,CHO,C,83,265,32,13,,23500000,81,2463,1,505,334,1347,1012,105,48,131,208,249
+Frank Kaminsky,CHO,PF,84,242,24,2,University of Wisconsin,2847600,79,1835,104,203,155,873,288,129,36,19,66,95
+Jeremy Lamb,CHO,SG,77,185,25,5,University of Connecticut,7.00E+06,80,1967,94,286,179,1033,324,186,61,32,93,138
+Julyan Stone,CHO,SG,78,200,29,3,University of Texas at El Paso,1524305,23,175,6,0,1,19,29,26,4,2,7,21
+Kemba Walker,CHO,PG,73,172,27,6,University of Connecticut,1.20E+07,80,2736,231,357,363,1770,248,444,91,24,179,98
+Malik Monk,CHO,SG,75,200,19,0,University of Kentucky,2904480,63,854,83,70,32,421,66,91,20,9,49,60
+Mangok Mathiang,CHO,C,82,230,25,0,University of Louisville,0,4,20,0,4,0,8,10,0,1,0,0,5
+Marcus Paige,CHO,PG,73,175,24,0,University of North Carolina,0,5,28,2,2,2,12,4,3,0,0,0,0
+Marvin Williams,CHO,PF,81,237,31,12,University of North Carolina,13168750,78,2006,126,132,102,744,370,96,56,38,66,116
+Michael Carter-Williams,CHO,PG,78,190,26,4,Syracuse University,2700000,52,835,14,62,73,239,138,116,44,23,52,99
+Michael Kidd-Gilchrist,CHO,SF,79,232,24,5,University of Kentucky,1.30E+07,74,1850,0,282,117,681,302,71,51,32,53,143
+Nicolas Batum,CHO,SG,80,200,29,9,,22434783,64,1981,92,178,108,740,306,349,65,23,131,72
+Treveon Graham,CHO,SG,78,220,24,1,Virginia Commonwealth University,1312611,63,1050,40,56,41,273,121,59,33,2,27,109
+Willy Hernangomez,CHO,C,83,240,23,1,,1435750,22,262,4,38,47,135,116,12,10,9,9,32
+Courtney Lee,NYK,SG,77,200,32,9,Western Kentucky University,11747890,76,2310,113,230,114,913,224,180,80,17,84,109
+Damyean Dotson,NYK,SG,78,205,23,0,"University of Oregon, University of Houston",1100000,44,474,22,50,16,182,84,31,12,2,17,34
+Emmanuel Mudiay,NYK,PG,77,200,21,2,,3381480,22,493,9,66,35,194,58,85,20,7,41,33
+Enes Kanter,NYK,C,83,245,25,6,,20566802,71,1830,0,422,156,1000,780,105,36,37,122,187
+Frank Ntilikina,NYK,PG,77,190,19,0,,3501120,78,1706,50,132,49,463,177,250,65,18,131,181
+Isaiah Hicks,NYK,PF,81,233,23,0,University of North Carolina,0,18,240,2,31,12,80,41,16,2,4,16,45
+Jarrett Jack,NYK,PG,75,200,34,12,Georgia Institute of Technology,1471382,62,1548,25,164,63,466,191,348,35,4,115,98
+Joakim Noah,NYK,C,83,230,32,10,University of Florida,17765000,7,40,0,5,2,12,14,4,2,2,4,5
+Kristaps Porzingis,NYK,PF,87,240,22,2,,4503600,48,1553,90,300,218,1088,316,57,36,115,93,141
+Kyle O'Quinn,NYK,C,82,250,27,5,Norfolk State University,4087500,77,1387,4,220,98,550,470,158,36,98,100,192
+Lance Thomas,NYK,PF,80,235,29,6,Duke University,6655325,73,1353,50,52,44,298,175,44,30,14,40,134
+Luke Kornet,NYK,PF,85,250,22,0,Vanderbilt University,0,20,326,28,21,8,134,64,26,6,16,12,28
+Michael Beasley,NYK,PF,81,235,29,9,Kansas State University,1471382,74,1653,34,375,124,976,414,123,36,43,143,145
+Mindaugas Kuzminskas,NYK,SF,81,215,28,1,,3025035,1,2,0,0,0,0,0,0,0,0,0,0
+Ron Baker,NYK,SG,76,220,24,1,Wichita State University,4328000,29,385,11,9,20,71,30,47,26,6,18,33
+Tim Hardaway,NYK,SG,78,205,25,4,University of Michigan,16500000,57,1885,130,230,146,996,224,155,62,10,92,123
+Trey Burke,NYK,PG,73,191,25,4,University of Michigan,784160,36,785,38,155,37,461,71,170,24,4,43,43
+Troy Williams,NYK,SF,79,218,23,1,Indiana University,370794,17,290,11,38,19,128,59,15,19,4,18,32
+Allen Crabbe,BRK,SG,78,210,25,4,University of California,19332500,75,2197,201,136,115,990,324,117,47,35,78,168
+Caris LeVert,BRK,SF,79,203,23,1,University of Michigan,1632480,71,1864,85,235,133,858,260,299,82,22,153,159
+D'Angelo Russell,BRK,PG,77,195,21,2,Ohio State University,5562360,48,1234,90,188,97,743,189,249,36,17,147,93
+Dante Cunningham,BRK,SF,80,230,30,8,Villanova University,2300000,22,447,23,42,11,164,105,22,12,14,17,36
+DeMarre Carroll,BRK,SF,80,215,31,8,"Vanderbilt University, University of Missouri",14800000,73,2180,145,180,188,983,479,147,59,30,103,165
+Isaiah Whitehead,BRK,PG,76,213,22,1,Seton Hall University,1312611,16,180,7,33,13,100,26,20,8,2,24,23
+Jacob Wiley,BRK,PF,79,215,23,0,Eastern Washington University,0,5,33,1,0,1,4,11,2,1,0,0,4
+Jahlil Okafor,BRK,C,83,275,22,2,Duke University,4995120,26,328,1,72,19,166,76,11,3,16,18,44
+James Webb,BRK,SF,81,202,24,0,Boise State University,0,10,120,4,2,0,16,24,4,1,0,4,10
+Jarrett Allen,BRK,C,82,234,19,0,University of Texas at Austin,1713720,72,1441,5,229,114,587,388,49,28,88,82,147
+Jeremy Lin,BRK,PG,75,200,29,7,Harvard University,1.20E+07,1,25,1,4,7,18,0,4,0,0,3,3
+Joe Harris,BRK,SG,78,219,26,3,University of Virginia,1524305,78,1975,150,155,86,846,260,128,35,20,91,153
+Milton Doyle,BRK,SG,76,185,24,0,Loyola University of Chicago,0,10,125,4,9,4,34,18,10,6,2,2,13
+Nik Stauskas,BRK,SG,78,205,24,3,University of Michigan,3807147,35,478,40,19,19,177,63,38,5,4,22,21
+Quincy Acy,BRK,PF,79,240,27,5,Baylor University,1709538,70,1359,102,28,49,411,257,57,33,29,60,149
+Rondae Hollis-Jefferson,BRK,SF,79,220,23,2,University of Arizona,1471382,68,1920,13,329,249,946,459,167,65,48,121,145
+Spencer Dinwiddie,BRK,PG,78,200,24,3,University of Colorado,1524305,80,2306,141,183,218,1007,259,524,68,23,128,186
+Timofey Mozgov,BRK,C,85,275,31,7,,15280000,31,359,4,48,23,131,98,11,5,13,33,39
+Antonio Blakeney,CHI,SG,76,197,21,0,Louisiana State University,0,19,314,15,38,30,151,33,20,7,1,11,19
+Bobby Portis,CHI,PF,83,250,22,2,University of Arkansas,1516320,73,1643,80,302,120,964,498,123,50,23,103,130
+Cameron Payne,CHI,PG,75,185,23,2,Murray State University,2203440,25,582,35,52,12,221,69,113,26,9,36,44
+Cristiano Felicio,CHI,C,82,275,25,2,,7843500,55,977,0,127,54,308,233,55,16,11,54,104
+David Nwaba,CHI,SG,76,209,25,1,"California Polytechnic State University, San Luis Obispo",1312611,70,1646,18,184,133,555,326,104,59,29,77,158
+Denzel Valentine,CHI,SG,78,212,24,1,Michigan State University,2186400,77,2095,143,158,38,783,393,244,65,11,99,185
+Jerian Grant,CHI,PG,76,195,25,2,University of Notre Dame,1713840,74,1686,61,148,140,619,172,342,63,8,89,132
+Justin Holiday,CHI,SG,78,181,28,4,University of Washington,4615385,72,2265,161,129,135,876,291,153,80,31,93,134
+Kris Dunn,CHI,PG,76,205,23,1,Providence College,4046760,52,1525,43,243,84,699,221,310,104,27,150,174
+Lauri Markkanen,CHI,PF,84,230,20,0,University of Arizona,3821640,68,2020,145,229,140,1033,508,79,39,40,83,103
+Noah Vonleh,CHI,PF,82,240,22,3,Indiana University,3505233,21,399,18,39,13,145,144,21,13,6,16,26
+Omer Asik,CHI,C,84,255,31,7,,10595505,4,61,0,2,0,4,10,1,1,2,4,6
+Paul Zipser,CHI,SF,80,215,23,1,,1312611,54,824,37,44,19,218,131,46,20,15,43,86
+Quincy Pondexter,CHI,SF,79,220,29,5,University of Washington,3853931,23,196,3,11,14,45,27,9,8,2,11,24
+Robin Lopez,CHI,C,84,255,29,9,Stanford University,13788500,64,1690,4,338,68,756,290,124,14,53,107,109
+Ryan Arcidiacono,CHI,PG,75,188,23,0,Villanova University,0,24,304,9,8,5,48,25,35,13,0,13,18
+Zach LaVine,CHI,SG,77,200,22,3,"University of California, Los Angeles",3202217,24,656,42,94,87,401,94,72,24,4,43,55
+Aaron Gordon,ORL,PF,81,220,22,3,University of Arizona,5504420,58,1909,115,260,157,1022,457,136,59,45,107,111
+Adreian Payne,ORL,PF,82,237,26,3,Michigan State University,0,5,43,2,5,5,21,9,0,2,0,2,6
+Arron Afflalo,ORL,SG,77,210,32,10,"University of California, Los Angeles",1471382,53,682,27,38,22,179,66,30,4,9,21,56
+Bismack Biyombo,ORL,C,81,255,25,6,,1.70E+07,82,1495,0,183,102,468,468,66,21,95,84,158
+D.J. Augustin,ORL,PG,72,183,30,9,University of Texas at Austin,7250000,75,1760,114,130,164,766,160,287,54,0,123,94
+Evan Fournier,ORL,SF,79,205,25,5,,1.70E+07,57,1837,127,241,150,1013,180,165,47,16,95,138
+Jamel Artis,ORL,SG,79,213,25,0,University of Pittsburgh,0,15,279,8,23,7,77,38,18,2,3,8,11
+Jonathan Isaac,ORL,PF,82,210,20,0,Florida State University,4186320,27,536,16,39,19,145,99,18,33,30,27,48
+Jonathon Simmons,ORL,SG,78,195,28,2,University of Houston,6300000,69,2029,69,285,185,962,239,171,58,16,146,175
+Khem Birch,ORL,C,81,220,25,0,"University of Pittsburgh, University of Nevada, Las Vegas",815615,42,578,0,68,42,178,180,34,15,21,21,56
+Mario Hezonja,ORL,SF,80,215,22,2,,4078320,75,1657,90,183,86,722,281,106,81,31,86,134
+Marreese Speights,ORL,C,82,255,30,9,University of Florida,1471382,52,675,86,52,40,402,133,40,8,22,40,106
+Nikola Vucevic,ORL,C,84,260,27,6,University of Southern California,12250000,57,1683,64,335,77,939,523,191,56,62,109,144
+Rashad Vaughn,ORL,SG,78,202,21,2,"University of Nevada, Las Vegas",166258,5,35,1,1,0,5,4,0,1,0,2,2
+Rodney Purvis,ORL,SG,76,205,23,0,University of Connecticut,161280,16,290,13,22,13,96,27,17,3,3,10,26
+Shelvin Mack,ORL,PG,75,203,27,6,Butler University,6.00E+06,69,1365,48,130,69,473,166,272,54,8,89,91
+Terrence Ross,ORL,SG,79,206,26,5,University of Washington,10500000,24,600,30,46,27,209,73,38,27,11,29,45
+Wesley Iwundu,ORL,SF,79,193,23,0,Kansas State University,1050000,62,1020,9,84,34,229,137,57,33,12,30,81
+Andrew White,ATL,SF,79,210,24,0,"University of Nebraska, Syracuse University",0,15,209,18,7,1,69,34,6,3,1,8,12
+Antonius Cleveland,ATL,SG,78,195,23,0,Southeast Missouri State University,225792,4,42,3,1,2,13,4,0,1,1,5,12
+Damion Lee,ATL,SG,78,210,25,0,"Drexel University, University of Louisville",138240,15,404,15,47,22,161,71,29,19,1,14,25
+DeAndre' Bembry,ATL,SF,78,210,23,1,Saint Joseph's University,1567200,26,455,11,42,19,136,72,49,21,12,47,38
+Dennis Schroder,ATL,PG,73,172,24,4,,15500000,67,2078,76,424,225,1301,208,417,72,6,183,147
+Dewayne Dedmon,ATL,C,84,245,28,4,University of Southern California,6.00E+06,62,1542,50,200,67,617,489,90,40,51,86,162
+Isaiah Taylor,ATL,PG,75,170,23,1,University of Texas at Austin,1312611,67,1167,20,143,99,445,94,206,34,10,84,116
+Jaylen Morris,ATL,SG,77,185,22,0,Molloy,193536,6,98,2,11,0,28,16,7,2,1,6,2
+Jeremy Evans,ATL,SF,81,200,30,6,Western Kentucky University,133129,1,5,0,1,0,2,1,0,0,0,1,1
+John Collins,ATL,PF,82,235,20,0,Wake Forest University,1936920,74,1785,16,298,133,777,541,98,47,80,105,215
+Josh Magette,ATL,PG,73,160,28,0,Alabama - Huntsville,0,18,216,8,7,8,46,19,57,8,1,9,16
+Kent Bazemore,ATL,SG,77,201,28,5,Old Dominion University,16910113,65,1789,108,176,160,836,248,228,100,45,157,147
+Malcolm Delaney,ATL,PG,75,190,28,1,Virginia Polytechnic Institute and State University,2500000,54,1014,46,63,74,338,100,163,35,6,66,82
+Mike Muscala,ATL,C,83,240,26,4,Bucknell University,5.00E+06,53,1060,62,81,57,405,230,51,31,27,42,80
+Miles Plumlee,ATL,C,83,249,29,5,Duke University,12500000,55,918,0,105,27,237,228,45,17,30,63,79
+Nicolas Brussino,ATL,SF,79,195,24,1,,905249,4,10,0,0,0,0,3,0,0,0,0,0
+Taurean Waller-Prince,ATL,SF,80,220,23,1,Baylor University,2422560,82,2464,176,239,152,1158,389,214,85,42,191,168
+Tyler Cavanaugh,ATL,PF,81,239,23,0,George Washington University,729919,39,518,32,35,17,183,127,27,9,4,14,61
+Tyler Dorsey,ATL,SG,77,183,21,0,University of Oregon,815615,56,974,72,72,45,405,130,79,17,5,37,63
+Aaron Jackson,HOU,PG,76,185,31,0,Duquesne University,4608,1,35,1,2,1,8,3,1,0,0,1,4
+Bobby Brown,HOU,PG,74,175,33,3,"California State University, Fullerton",1230186,20,115,11,8,1,50,7,11,4,0,9,6
+Brandan Wright,HOU,PF,82,210,30,9,University of North Carolina,490461,1,15,0,2,0,4,2,0,0,1,0,3
+Briante Weber,HOU,PG,74,165,25,2,Virginia Commonwealth University,0,13,118,4,5,4,26,18,13,10,3,7,18
+Chinanu Onuaku,HOU,C,82,245,21,1,University of Louisville,1312611,1,22,0,2,0,4,4,1,0,0,3,4
+Chris Paul,HOU,PG,72,175,32,12,Wake Forest University,24599495,58,1847,144,223,203,1081,313,457,96,14,128,141
+Clint Capela,HOU,C,82,240,23,3,,2334520,74,2034,0,441,144,1026,802,68,58,137,103,185
+Eric Gordon,HOU,SG,76,215,29,9,Indiana University,12943020,69,2154,218,197,195,1243,170,154,44,27,130,116
+Gerald Green,HOU,SG,79,205,32,10,,872854,41,929,110,58,51,497,133,25,24,15,31,87
+Isaiah Canaan,HOU,SG,72,201,26,4,Murray State University,53465,1,4,0,0,0,0,1,0,0,0,0,0
+James Harden,HOU,SG,77,220,28,8,Arizona State University,28299399,72,2551,265,386,624,2191,389,630,126,50,315,169
+Joe Johnson,HOU,SF,79,240,36,16,University of Arkansas,473835,23,505,17,34,20,139,65,38,6,1,18,35
+Luc Mbah a Moute,HOU,PF,80,230,31,9,"University of California, Los Angeles",1471382,61,1564,63,103,65,460,186,55,72,25,68,100
+Markel Brown,HOU,SG,75,190,26,2,Oklahoma State University,0,4,31,1,1,0,5,5,2,0,0,2,6
+Nene Hilario,HOU,C,83,250,35,15,,3477600,52,758,0,136,68,340,176,45,28,14,38,123
+P.J. Tucker,HOU,PF,78,245,32,6,University of Texas at Austin,7590035,82,2281,115,57,43,502,457,77,78,26,74,205
+R.J. Hunter,HOU,SG,77,185,24,2,Georgia State University,0,5,45,3,4,2,19,5,3,3,0,2,7
+Ryan Anderson,HOU,PF,82,240,29,9,University of California,19578455,66,1725,131,76,72,617,331,60,24,21,42,126
+Tarik Black,HOU,C,81,250,26,3,"University of Memphis, University of Kansas",3290000,51,536,1,74,29,180,163,13,21,30,35,107
+Tim Quarterman,HOU,SG,78,195,23,1,Louisiana State University,96406,3,13,0,1,2,4,3,1,0,0,2,1
+Trevor Ariza,HOU,SF,80,215,32,13,"University of California, Los Angeles",7420912,67,2269,170,98,76,782,294,105,98,13,52,132
+Zhou Qi,HOU,C,85,210,22,0,,815615,18,124,2,4,8,22,22,2,2,14,10,14
+Andre Iguodala,GSW,SF,78,215,34,13,University of Arizona,14814815,64,1622,33,115,55,384,246,210,54,38,67,99
+Chris Boucher,GSW,PF,82,182,25,0,University of Oregon,0,1,1,0,0,0,0,1,0,0,0,0,0
+Damian Jones,GSW,C,84,245,22,1,Vanderbilt University,1312611,15,89,0,11,3,25,14,2,1,3,4,14
+David West,GSW,C,81,250,37,14,Xavier University,1471382,73,999,3,213,60,495,238,138,47,75,80,120
+Draymond Green,GSW,PF,79,230,27,5,Michigan State University,16400000,70,2287,77,204,134,773,535,508,95,91,202,185
+JaVale McGee,GSW,C,84,270,30,9,"University of Nevada, Reno",1471382,65,615,0,136,38,310,169,33,21,57,27,91
+Jordan Bell,GSW,C,81,224,23,0,University of Oregon,815615,57,809,0,116,30,262,207,102,35,56,51,92
+Kevin Durant,GSW,PF,81,240,29,10,University of Texas at Austin,2.50E+07,68,2325,173,457,359,1792,464,366,50,119,207,133
+Kevon Looney,GSW,C,81,220,21,2,"University of California, Los Angeles",1471382,66,910,1,111,42,267,215,42,34,56,31,106
+Klay Thompson,GSW,SG,79,215,27,6,Washington State University,17826150,73,2506,229,346,82,1461,277,185,55,34,128,117
+Nick Young,GSW,SG,79,210,32,10,University of Southern California,5192000,80,1393,123,78,56,581,125,36,38,7,39,100
+Omri Casspi,GSW,SF,81,225,29,8,,1471382,53,740,10,110,50,300,200,51,18,19,37,71
+Patrick McCaw,GSW,SG,79,185,22,1,"University of Nevada, Las Vegas",1312611,57,961,19,73,26,229,82,81,43,10,41,67
+Quinn Cook,GSW,PG,74,184,24,1,Duke University,14832,33,740,46,76,22,312,82,89,12,1,32,59
+Shaun Livingston,GSW,PG,79,192,32,12,,7692308,71,1129,0,172,50,394,131,140,35,21,58,117
+Stephen Curry,GSW,PG,75,190,29,8,Davidson College,34682550,51,1631,212,216,278,1346,261,310,80,8,153,114
+Zaza Pachulia,GSW,C,83,270,33,14,,3477600,69,972,0,149,75,373,321,109,38,17,72,122
+Al-Farouq Aminu,POR,PF,81,220,27,7,Wake Forest University,7319035,69,2072,125,105,59,644,525,84,79,40,79,136
+Caleb Swanigan,POR,PF,80,250,20,0,Purdue University,1465920,27,189,1,23,12,61,54,14,5,3,18,37
+CJ McCollum,POR,SG,75,190,26,4,Lehigh University,23962573,81,2923,189,478,209,1732,321,272,77,35,151,168
+Damian Lillard,POR,PG,75,195,27,5,Weber State University,26153057,73,2670,227,394,493,1962,325,481,77,27,206,117
+Ed Davis,POR,C,82,240,28,7,University of North Carolina,6352531,78,1471,0,170,74,414,575,40,32,52,66,188
+Evan Turner,POR,SF,79,220,29,7,Ohio State University,17131148,79,2034,42,216,91,649,244,173,47,29,99,163
+Georgios Papagiannis,POR,C,85,240,20,1,,259556,1,4,0,1,0,2,1,0,2,0,0,0
+Jake Layman,POR,SF,81,210,23,1,University of Maryland,1312611,35,160,4,10,2,34,16,11,6,4,5,13
+Jusuf Nurkic,POR,C,84,280,23,3,,2947305,79,2088,0,480,172,1132,708,143,64,111,183,247
+Maurice Harkless,POR,SF,81,215,24,5,St. John's University,10162922,59,1264,49,98,42,385,162,53,48,43,40,103
+Meyers Leonard,POR,C,85,245,25,5,University of Illinois at Urbana-Champaign,9904495,33,254,11,35,9,112,70,17,7,0,10,36
+Pat Connaughton,POR,SG,77,206,25,2,University of Notre Dame,1471382,82,1488,74,91,37,441,161,91,23,22,43,120
+Shabazz Napier,POR,PG,73,175,26,3,University of Connecticut,2361360,74,1535,82,141,116,644,170,150,81,14,90,84
+Wade Baldwin,POR,PG,76,202,21,1,Vanderbilt University,229892,7,80,4,10,6,38,8,5,2,1,4,12
+Zach Collins,POR,C,84,232,20,0,Gonzaga University,3057240,66,1045,35,80,27,292,221,52,17,31,58,133
+Alex Abrines,OKC,SG,78,190,24,1,,5725000,75,1134,84,31,39,353,114,28,38,8,25,124
+Andre Roberson,OKC,SG,79,210,26,4,University of Colorado,9259259,39,1037,8,79,12,194,185,46,45,35,30,89
+Carmelo Anthony,OKC,PF,80,240,33,14,Syracuse University,26243760,78,2501,169,303,148,1261,453,103,47,49,99,197
+Corey Brewer,OKC,SG,81,186,31,10,University of Florida,340829,18,514,23,41,31,182,61,24,38,6,11,56
+Dakari Johnson,OKC,C,84,255,22,0,University of Kentucky,815615,31,161,0,22,11,55,34,8,6,8,3,27
+Daniel Hamilton,OKC,SG,79,195,22,0,University of Connecticut,0,6,28,2,3,0,12,5,8,1,0,2,2
+Jerami Grant,OKC,PF,80,210,23,3,Syracuse University,1524305,81,1647,32,212,162,682,319,57,31,77,54,155
+Josh Huestis,OKC,PF,79,230,26,2,Stanford University,1471382,69,982,33,27,6,159,161,20,15,43,26,82
+Kyle Singler,OKC,SF,80,228,29,5,Duke University,4666500,12,59,2,5,7,23,10,2,1,0,3,4
+Nick Collison,OKC,PF,82,255,37,13,University of Kansas,2328652,15,75,0,13,5,31,20,4,0,0,7,7
+Patrick Patterson,OKC,PF,81,230,28,7,University of Kentucky,5192000,82,1270,66,40,40,318,193,57,48,23,33,87
+Paul George,OKC,SF,81,220,27,7,"California State University, Fresno",19508958,79,2891,244,332,338,1734,447,263,161,39,212,233
+PJ Dozier,OKC,PG,79,201,21,0,University of South Carolina,0,2,3,0,1,0,2,1,0,0,0,1,1
+Raymond Felton,OKC,PG,73,205,33,12,University of North Carolina,1471382,82,1365,81,143,36,565,156,203,49,16,76,91
+Russell Westbrook,OKC,PG,75,200,29,9,"University of California, Los Angeles",28530608,80,2914,97,660,417,2028,804,820,147,20,381,200
+Steven Adams,OKC,C,84,255,24,4,University of Pittsburgh,22471910,76,2487,0,448,160,1056,685,88,92,78,128,215
+Terrance Ferguson,OKC,SG,79,184,19,0,,1785000,61,763,40,30,9,189,47,19,24,10,11,83
+Alec Burks,UTA,SG,78,214,26,6,University of Colorado,10845506,64,1059,47,123,107,494,192,67,37,8,60,75
+Dante Exum,UTA,PG,78,190,22,2,,4992385,14,235,5,37,25,114,26,43,8,3,20,20
+David Stockton,UTA,PG,71,165,26,1,Gonzaga University,192813,3,9,2,0,4,10,0,0,0,0,1,3
+Derrick Favors,UTA,C,82,265,26,7,Georgia Institute of Technology,1.20E+07,77,2153,14,381,140,944,552,102,54,82,88,164
+Donovan Mitchell,UTA,SG,75,211,21,0,University of Louisville,2621280,79,2638,187,408,239,1616,296,291,118,27,215,213
+Ekpe Udoh,UTA,C,82,240,30,5,"University of Michigan, Baylor University",3200000,63,810,0,60,42,162,150,53,43,74,20,105
+Erik McCree,UTA,SF,80,225,24,0,Louisiana Tech University,0,4,8,0,0,0,0,1,0,1,0,1,0
+Georges Niang,UTA,PF,80,230,24,1,Iowa State University,0,9,32,0,4,1,9,9,3,2,0,3,1
+Jae Crowder,UTA,SF,78,235,27,5,Marquette University,6796117,27,744,48,66,43,319,102,41,23,9,32,63
+Joe Ingles,UTA,SF,80,226,30,3,,14136364,82,2578,204,131,66,940,344,392,90,20,159,178
+Jonas Jerebko,UTA,PF,82,231,30,7,,4.00E+06,74,1134,65,94,46,429,246,42,24,12,27,127
+Nate Wolters,UTA,PG,76,190,26,2,South Dakota State University,0,5,19,0,1,0,2,2,1,0,0,0,1
+Naz Mitrou-Long,UTA,SG,76,209,24,0,Iowa State University,92160,1,1,1,0,0,3,0,0,0,0,0,0
+Raul Neto,UTA,PG,73,179,25,2,,1471382,41,498,19,50,26,183,49,75,13,4,36,38
+Ricky Rubio,UTA,PG,76,194,27,6,,14275000,77,2254,96,250,220,1008,351,410,121,11,207,206
+Royce O'Neale,UTA,SF,78,215,24,0,Baylor University,815615,69,1150,42,78,61,343,236,95,36,16,55,105
+Rudy Gobert,UTA,C,85,245,25,4,,21974719,56,1816,0,276,204,756,601,80,44,129,107,153
+Thabo Sefolosha,UTA,SF,79,220,33,11,,5250000,38,806,32,86,44,312,161,33,52,12,30,59
+Tony Bradley,UTA,C,83,240,20,0,University of North Carolina,1414920,9,29,0,3,2,8,11,1,0,0,0,1
+Anthony Davis,NOP,PF,82,253,24,5,University of Kentucky,23775506,75,2727,55,725,495,2110,832,174,115,193,162,159
+Charles Cooke,NOP,SG,77,196,23,0,University of Dayton,0,13,38,1,1,1,6,2,1,1,0,1,0
+Cheick Diallo,NOP,PF,81,220,21,1,University of Kansas,1312611,52,581,0,102,50,254,211,19,11,21,28,82
+Darius Miller,NOP,SF,80,235,27,3,University of Kentucky,2100000,82,1944,147,69,58,637,164,111,28,17,58,160
+DeMarcus Cousins,NOP,C,83,270,27,7,University of Kentucky,18063850,48,1737,104,302,294,1210,617,257,79,76,242,183
+E'Twaun Moore,NOP,SG,76,191,28,6,Purdue University,8445024,82,2586,128,295,48,1022,238,187,79,12,102,182
+Emeka Okafor,NOP,C,82,252,35,9,University of Connecticut,774914,26,353,0,48,18,114,120,8,8,25,13,30
+Ian Clark,NOP,SG,75,175,26,4,Belmont University,1471382,74,1455,62,160,45,551,127,110,33,10,57,120
+Jordan Crawford,NOP,SG,76,195,29,5,"Indiana University, Xavier University",308190,5,53,8,4,1,33,4,13,1,1,5,7
+Josh Smith,NOP,PF,81,225,32,12,,210500,3,12,0,1,0,2,4,0,0,0,0,3
+Jrue Holiday,NOP,SG,76,205,27,8,"University of California, Los Angeles",25686667,81,2927,120,495,187,1537,365,486,123,64,213,201
+Mike James,NOP,PG,73,189,27,0,Lamar University,0,4,18,0,2,0,4,1,6,1,0,1,3
+Nikola Mirotic,NOP,PF,82,220,26,3,,12500000,30,872,66,97,47,439,246,41,29,26,31,63
+Rajon Rondo,NOP,PG,73,186,31,11,University of Kentucky,3300000,65,1705,50,181,25,537,263,533,70,10,151,119
+Solomon Hill,NOP,SF,79,225,26,4,University of Arizona,12236535,12,187,4,7,3,29,36,22,7,1,9,22
+"Walt Lemon, Jr.",NOP,PG,75,180,25,0,Bradley University,92160,5,35,1,6,2,17,2,5,0,1,4,5
+Brandon Paul,SAS,SG,76,200,26,0,University of Illinois at Urbana-Champaign,815615,64,576,15,40,22,147,68,37,25,7,29,58
+Bryn Forbes,SAS,SG,75,190,24,1,Michigan State University,1312611,80,1517,89,120,48,555,110,80,28,2,37,108
+Danny Green,SAS,SG,78,215,30,8,University of North Carolina,1.00E+07,70,1791,116,101,50,600,249,110,63,80,74,122
+Darrun Hilliard,SAS,SG,78,205,24,2,Villanova University,0,14,95,0,5,6,16,7,11,2,0,4,7
+Davis Bertans,SAS,PF,82,210,25,1,,1312611,77,1086,94,67,40,456,153,74,26,28,36,93
+Dejounte Murray,SAS,PG,77,170,21,1,University of Washington,1312611,81,1743,9,261,105,654,459,231,97,31,134,151
+Derrick White,SAS,PG,77,190,23,0,University of Colorado,1404600,17,139,8,8,14,54,26,9,4,3,6,8
+Joffrey Lauvergne,SAS,C,83,220,26,3,,1524305,55,534,0,98,30,226,171,41,9,3,33,45
+Kawhi Leonard,SAS,SF,79,230,26,6,San Diego State University,18868625,9,210,11,41,31,146,42,21,18,9,16,9
+Kyle Anderson,SAS,SF,81,230,24,3,"University of California, Los Angeles",2151704,74,1978,19,212,104,585,396,202,115,60,94,114
+LaMarcus Aldridge,SAS,C,83,260,32,11,University of Texas at Austin,21461010,75,2509,27,660,334,1735,635,152,43,90,111,161
+Manu Ginobili,SAS,SG,78,205,40,15,,2500000,65,1299,64,137,110,576,142,163,43,16,105,126
+Matt Costello,SAS,C,81,245,24,0,Michigan State University,0,4,32,0,2,0,4,9,2,2,2,1,7
+Patty Mills,SAS,PG,72,185,29,8,Saint Mary's College of California,10714286,82,2107,154,126,105,819,154,229,55,11,106,128
+Pau Gasol,SAS,C,84,250,37,16,,1.60E+07,77,1812,43,244,158,775,619,238,24,79,108,121
+Rudy Gay,SAS,PF,80,230,31,11,University of Connecticut,8406000,57,1231,37,216,112,655,291,73,46,38,78,98
+Tony Parker,SAS,PG,74,185,35,16,,15453126,55,1071,10,168,55,421,95,195,28,1,68,52
+Aaron Brooks,MIN,PG,72,161,33,9,University of Oregon,1471382,32,189,11,17,8,75,17,20,6,0,11,28
+Andrew Wiggins,MIN,SF,80,199,22,3,University of Kansas,7574322,82,2979,112,457,202,1452,358,160,91,51,138,163
+Anthony Brown,MIN,SF,79,210,25,2,Stanford University,0,1,4,1,0,0,3,0,1,0,0,0,0
+Cole Aldrich,MIN,C,83,250,29,7,University of Kansas,7300000,21,49,0,5,2,12,15,3,2,1,1,11
+Gorgui Dieng,MIN,C,83,241,28,4,University of Louisville,14112360,79,1333,19,167,79,470,360,71,45,39,59,147
+Jamal Crawford,MIN,SG,77,200,37,17,University of Michigan,4328000,80,1653,104,204,102,822,99,185,40,9,95,85
+Jeff Teague,MIN,PG,74,186,29,8,Wake Forest University,1.90E+07,70,2311,84,270,202,994,209,492,102,23,177,171
+Jimmy Butler,MIN,SG,80,236,28,6,Marquette University,19301070,59,2164,70,367,363,1307,314,288,116,24,108,78
+Justin Patton,MIN,C,83,229,20,0,Creighton University,2247480,1,4,0,1,0,2,0,0,1,0,0,1
+Karl-Anthony Towns,MIN,C,84,244,22,2,University of Kentucky,6216840,82,2918,120,519,345,1743,1012,199,64,115,159,285
+Marcus Georges-Hunt,MIN,SG,77,216,23,1,Georgia Institute of Technology,1312611,42,224,4,17,13,59,16,7,6,0,3,32
+Nemanja Bjelica,MIN,PF,82,240,29,2,,3949999,67,1371,76,95,36,454,274,86,50,16,52,141
+Taj Gibson,MIN,PF,81,225,32,8,University of Southern California,1.40E+07,82,2726,7,418,142,999,584,99,62,59,89,218
+Tyus Jones,MIN,PG,74,195,21,2,Duke University,1471382,82,1467,45,105,71,416,132,232,95,6,59,110
+Darrell Arthur,DEN,PF,81,235,29,8,University of Kansas,7464912,19,141,8,14,2,54,15,9,8,3,15,22
+Devin Harris,DEN,PG,75,192,34,13,University of Wisconsin,4402546,27,533,35,34,49,222,42,67,14,4,27,55
+Gary Harris,DEN,SG,76,210,23,3,Michigan State University,2550055,67,2304,156,284,134,1170,176,194,122,15,119,119
+Jamal Murray,DEN,PG,76,207,20,1,University of Kentucky,3355320,81,2565,165,314,229,1352,297,274,79,28,172,173
+Juan Hernangomez,DEN,PF,81,230,22,1,,2076840,25,277,14,15,10,82,54,12,6,3,9,25
+Kenneth Faried,DEN,PF,80,228,28,6,Morehead State University,12921348,32,461,0,76,36,188,153,18,12,13,23,51
+Malik Beasley,DEN,SG,77,196,21,1,Florida State University,1700640,62,583,28,45,22,196,71,31,15,7,24,36
+Mason Plumlee,DEN,C,83,245,27,4,Duke University,14041096,74,1439,0,221,82,524,400,142,49,81,103,184
+Monte Morris,DEN,PG,75,175,22,0,Iowa State University,0,3,25,0,4,2,10,2,7,3,0,1,1
+Nikola Jokic,DEN,C,82,250,22,2,,1471382,75,2443,111,393,266,1385,803,458,90,61,210,212
+Paul Millsap,DEN,PF,80,246,32,11,Louisiana Tech University,31269231,38,1143,39,163,112,555,245,105,39,44,73,99
+Richard Jefferson,DEN,SF,79,233,37,16,University of Arizona,1454756,20,163,2,10,4,30,17,15,2,1,5,11
+Torrey Craig,DEN,SF,78,215,27,0,University of South Carolina Upstate,0,39,629,17,45,22,163,127,25,12,15,20,63
+Trey Lyles,DEN,PF,82,234,22,2,University of Kentucky,2441400,73,1391,83,187,101,724,347,91,30,34,61,111
+Tyler Lydon,DEN,PF,82,215,21,0,Syracuse University,1579440,1,2,0,0,0,0,0,0,0,0,0,0
+Will Barton,DEN,SG,78,175,27,5,University of Memphis,3533333,81,2683,156,309,182,1268,409,331,82,52,149,168
+Wilson Chandler,DEN,SF,80,225,30,9,DePaul University,12016854,74,2346,88,193,88,738,398,159,43,39,92,156
+Austin Rivers,LAC,SG,76,200,25,5,Duke University,11825000,61,2057,136,205,102,920,145,242,74,16,109,152
+Avery Bradley,LAC,SG,74,180,27,7,University of Texas at Austin,8808989,6,165,1,25,2,55,22,11,5,1,8,12
+Boban Marjanovic,LAC,C,87,290,29,2,,7.00E+06,20,166,0,38,41,117,87,8,6,5,14,23
+C.J. Williams,LAC,SG,77,225,27,0,North Carolina State University,375000,38,707,22,65,13,209,56,43,31,13,20,63
+Danilo Gallinari,LAC,SF,82,225,29,8,,20559599,21,671,36,66,81,321,101,41,12,10,26,30
+DeAndre Jordan,LAC,C,83,265,29,9,Texas A&M University,22642350,77,2424,0,373,181,927,1171,117,39,71,137,203
+Jamil Wilson,LAC,SF,79,230,27,0,"University of Oregon, Marquette University",0,15,274,27,11,2,105,32,10,5,8,8,34
+Jawun Evans,LAC,PG,72,185,21,0,Oklahoma State University,815615,48,778,15,74,38,231,84,100,36,6,44,97
+Lou Williams,LAC,SG,73,175,31,12,,7.00E+06,79,2589,186,396,432,1782,198,417,85,19,234,106
+Milos Teodosic,LAC,PG,77,196,30,0,,6.00E+06,45,1134,88,63,39,429,126,209,23,5,97,103
+Montrezl Harrell,LAC,C,80,240,24,2,University of Louisville,1471382,76,1293,1,347,139,836,306,74,36,52,68,143
+Patrick Beverley,LAC,SG,73,185,29,5,University of Arkansas,5513514,11,334,24,24,14,134,45,32,19,5,25,34
+Sam Dekker,LAC,PF,81,230,23,2,University of Wisconsin,1794600,73,883,10,118,37,303,174,38,24,9,33,71
+Sindarius Thornwell,LAC,SG,77,212,23,0,University of South Carolina,815615,73,1156,23,77,59,282,140,68,48,25,53,125
+Tobias Harris,LAC,PF,81,235,25,6,University of Tennessee,1.60E+07,32,1105,70,172,64,618,193,98,37,20,54,73
+Tyrone Wallace,LAC,PG,77,205,23,0,University of California,0,30,851,10,100,61,291,105,71,27,13,46,83
+Wesley Johnson,LAC,SF,79,215,30,7,"Iowa State University, Syracuse University",5881260,74,1486,60,90,43,403,216,61,76,62,55,146
+Alex Caruso,LAL,PG,77,186,23,0,Texas A&M University,0,37,562,13,37,21,134,65,75,23,10,42,52
+Andre Ingram,LAL,SG,75,190,32,0,American University,13824,2,64,5,3,3,24,6,7,3,3,3,3
+Andrew Bogut,LAL,C,84,260,33,12,University of Utah,1105123,23,216,0,17,2,36,78,15,4,13,19,40
+Brandon Ingram,LAL,SF,81,190,20,1,Duke University,5519400,59,1975,41,317,192,949,314,230,45,43,149,163
+Brook Lopez,LAL,C,84,275,29,9,Stanford University,22642350,74,1735,112,257,111,961,294,126,30,98,98,195
+Channing Frye,LAL,C,83,255,34,11,University of Arizona,7420912,9,150,9,11,3,52,25,10,1,1,4,15
+Derrick Williams,LAL,PF,80,240,26,6,University of Arizona,83129,2,9,0,1,0,2,1,0,0,0,0,0
+Isaiah Thomas,LAL,PG,69,185,28,6,University of Washington,6261395,17,456,33,54,58,265,36,85,6,1,54,33
+Ivica Zubac,LAL,C,85,265,20,1,,1312611,43,410,0,61,39,161,123,25,8,15,26,47
+Josh Hart,LAL,SG,77,209,22,0,Villanova University,1394520,63,1461,78,98,66,496,263,80,47,16,47,107
+Julius Randle,LAL,C,81,250,23,3,University of Kentucky,4149242,82,2190,10,494,305,1323,654,210,43,45,213,274
+Kentavious Caldwell-Pope,LAL,SG,77,205,24,4,University of Georgia,17745894,74,2458,159,181,153,992,387,162,106,16,97,145
+Kyle Kuzma,LAL,PF,81,220,22,0,University of Utah,1423560,77,2401,159,309,147,1242,483,141,49,34,140,160
+Lonzo Ball,LAL,PG,78,190,20,0,"University of California, Los Angeles",6286560,52,1780,90,113,32,528,360,376,88,43,136,117
+Luol Deng,LAL,SF,81,220,32,13,Duke University,17190000,1,13,0,1,0,2,0,1,1,0,1,0
+Thomas Bryant,LAL,C,82,248,20,0,Indiana University,815615,15,72,1,7,5,22,17,6,1,2,2,6
+Travis Wear,LAL,SF,82,230,27,1,"University of North Carolina, University of California, Los Angeles",296636,17,228,17,8,8,75,38,7,4,5,6,30
+Tyler Ennis,LAL,PG,75,194,23,3,Syracuse University,1524305,54,683,14,80,22,224,95,105,30,10,38,75
+Vander Blue,LAL,SG,76,200,25,2,Marquette University,50000,5,45,0,1,1,3,1,3,1,0,3,2
+Bogdan Bogdanovic,SAC,SG,78,205,25,0,,9470614,78,2175,129,215,100,917,223,258,72,16,125,172
+Bruno Caboclo,SAC,SF,81,218,22,3,,2451225,10,100,3,6,5,26,21,3,2,4,4,7
+Buddy Hield,SAC,SG,76,214,24,1,University of Oklahoma,3675480,80,2024,176,240,71,1079,307,155,85,22,124,148
+De'Aaron Fox,SAC,PG,75,170,20,0,University of Kentucky,4609200,73,2026,47,281,141,844,204,320,70,20,173,163
+Frank Mason,SAC,PG,72,189,23,0,University of Kansas,1184385,52,984,31,113,94,413,130,147,34,10,65,72
+Garrett Temple,SAC,SG,78,195,31,7,Louisiana State University,8.00E+06,65,1615,89,110,60,547,152,124,57,27,79,135
+Jack Cooley,SAC,PF,81,260,26,1,University of Notre Dame,0,7,87,0,13,14,40,30,6,1,0,3,13
+JaKarr Sampson,SAC,SF,81,214,24,2,St. John's University,0,22,344,5,39,10,103,78,9,8,22,8,48
+Justin Jackson,SAC,SF,80,200,22,0,University of North Carolina,2365560,68,1506,57,128,26,453,187,74,28,13,40,81
+Kosta Koufos,SAC,C,84,265,28,9,Ohio State University,8393000,71,1391,0,222,33,477,472,87,47,32,49,146
+Skal Labissiere,SAC,PF,83,225,21,1,University of Kentucky,1312611,60,1240,18,187,95,523,288,72,25,49,73,132
+Vince Carter,SAC,SF,78,220,41,19,University of North Carolina,8.00E+06,58,1026,57,57,28,313,148,69,42,26,36,96
+Willie Cauley-Stein,SAC,C,84,240,24,2,University of Kentucky,3704160,73,2044,3,385,153,932,510,172,77,67,109,185
+Zach Randolph,SAC,PF,81,260,36,16,Michigan State University,12307692,59,1508,51,310,84,857,397,127,42,10,116,119
+Aaron Harrison,DAL,SG,78,210,23,2,University of Kentucky,174571,9,233,9,10,13,60,24,11,9,2,3,27
+Dennis Smith,DAL,PG,75,195,20,0,North Carolina State University,3218280,69,2049,106,298,134,1048,260,358,71,18,194,152
+Dirk Nowitzki,DAL,C,84,245,39,19,,5.00E+06,77,1900,138,208,97,927,438,120,43,45,51,146
+Dorian Finney-Smith,DAL,PF,80,220,24,1,University of Florida,1312611,21,448,20,26,11,123,75,26,10,4,21,43
+Doug McDermott,DAL,SF,80,225,26,3,Creighton University,3294994,26,596,39,47,24,235,66,29,9,4,22,49
+Dwight Powell,DAL,C,83,240,26,3,Stanford University,9003125,79,1672,28,227,133,671,444,91,67,32,59,186
+Gian Clavell,DAL,SG,76,185,24,0,Colorado State University,0,7,64,6,0,2,20,7,3,2,0,2,8
+Harrison Barnes,DAL,PF,80,210,25,5,University of North Carolina,23112004,77,2634,119,418,259,1452,468,152,49,14,118,94
+J.J. Barea,DAL,PG,72,185,33,11,Northeastern University,3903900,69,1603,115,188,80,801,201,434,35,3,143,83
+Jalen Jones,DAL,SF,79,223,24,0,Texas A&M University,0,12,162,9,16,10,69,35,4,5,1,7,20
+Jameel Warney,DAL,PF,80,260,24,0,Stony Brook University,46080,3,27,0,7,3,17,9,0,0,0,1,2
+Jeff Withey,DAL,C,84,231,27,4,University of Kansas,1577320,9,39,2,4,1,15,10,0,0,3,2,3
+Johnathan Motley,DAL,PF,81,238,22,0,Baylor University,0,11,176,1,39,15,96,49,7,3,2,9,18
+Josh McRoberts,DAL,PF,82,240,30,10,Duke University,6021175,2,6,0,0,0,0,0,0,0,0,0,2
+Kyle Collinsworth,DAL,SF,78,210,26,0,Brigham Young University,382464,32,480,4,34,21,101,107,56,17,9,24,44
+Maxi Kleber,DAL,PF,82,220,26,0,,815615,72,1206,40,111,44,386,234,51,26,47,30,114
+Nerlens Noel,DAL,C,83,228,23,3,University of Kentucky,4187599,30,472,0,55,21,131,168,20,31,22,26,59
+Salah Mejri,DAL,C,85,245,31,2,,1471382,61,729,0,88,38,214,246,35,22,67,39,121
+Scotty Hopson,DAL,SG,79,204,28,1,University of Tennessee,74159,1,8,0,0,1,1,0,1,0,0,1,0
+Wesley Matthews,DAL,SF,77,220,31,8,Marquette University,17884176,63,2131,153,130,83,802,198,172,76,16,83,140
+Yogi Ferrell,DAL,SG,72,180,24,1,Indiana University,1312611,82,2282,134,177,82,838,249,201,64,9,78,153
+Andrew Harrison,MEM,PG,78,213,23,1,University of Kentucky,1312611,56,1326,47,134,124,533,131,177,38,26,81,138
+Ben McLemore,MEM,SG,77,195,24,4,University of Kansas,5200000,56,1091,55,102,53,422,139,51,38,15,61,139
+Brice Johnson,MEM,PF,82,230,23,1,University of North Carolina,1331160,9,60,0,13,1,27,18,1,3,4,1,6
+Chandler Parsons,MEM,SF,82,230,29,6,University of Florida,23112004,36,691,51,57,17,284,90,69,18,11,35,53
+Deyonta Davis,MEM,C,83,237,21,1,Michigan State University,1312611,62,943,0,161,38,360,250,40,15,39,32,125
+Dillon Brooks,MEM,SF,78,220,22,0,University of Oregon,815615,82,2350,94,246,124,898,257,135,73,17,124,233
+Ivan Rabb,MEM,PF,82,220,20,0,University of California,950000,36,516,0,86,29,201,158,32,12,13,35,55
+JaMychal Green,MEM,PF,81,227,27,3,University of Alabama,8533333,55,1542,43,180,80,569,464,79,32,25,76,153
+Jarell Martin,MEM,PF,82,239,23,2,Louisiana State University,1471382,73,1661,34,187,89,565,318,73,39,49,86,211
+Kobi Simmons,MEM,PG,77,166,20,0,University of Arizona,0,32,643,11,69,25,196,50,68,18,5,44,61
+Marc Gasol,MEM,C,85,255,33,9,,22642350,73,2408,109,325,281,1258,592,305,54,101,194,185
+Mario Chalmers,MEM,PG,74,190,31,8,University of Kansas,2106407,66,1421,53,115,118,507,157,197,79,14,117,179
+Marquis Teague,MEM,PG,74,189,24,2,University of Kentucky,157945,3,74,1,3,2,11,6,13,4,0,3,5
+MarShon Brooks,MEM,SG,77,200,29,3,Providence College,332477,7,193,19,32,20,141,21,25,11,3,16,6
+Mike Conley,MEM,PG,73,175,30,10,Ohio State University,28530608,12,373,24,40,53,205,27,49,12,3,18,24
+Myke Henry,MEM,SF,78,210,25,0,DePaul University,0,20,378,19,22,6,107,38,22,31,6,19,28
+Omari Johnson,MEM,PF,81,220,28,0,Oregon State University,27648,4,75,4,5,0,22,11,7,2,0,3,6
+Tyreke Evans,MEM,PG,78,220,28,8,University of Memphis,3290000,52,1607,114,252,164,1010,265,269,57,17,117,96
+Vince Hunter,MEM,PF,80,208,23,0,University of Texas at El Paso,0,4,7,0,3,0,6,3,0,0,1,1,0
+Wayne Selden,MEM,SG,77,230,23,1,University of Kansas,1312611,35,692,49,67,44,325,56,66,18,5,54,59
+Xavier Rathan-Mayes,MEM,SG,76,208,23,0,Florida State University,46080,5,118,1,11,4,29,5,18,6,3,11,18
+Alan Williams,PHO,PF,80,260,25,2,"University of California, Santa Barbara",6.00E+06,5,70,0,7,6,20,22,8,5,1,7,13
+Alec Peters,PHO,PF,81,232,22,0,Valparaiso University,0,20,225,18,10,8,82,37,12,2,2,4,13
+Alex Len,PHO,C,85,260,24,4,University of Maryland,4187599,69,1395,1,213,158,587,518,82,27,61,78,158
+Danuel House,PHO,SG,79,207,24,1,Texas A&M University,0,23,403,15,41,25,152,76,25,7,6,11,23
+Davon Reed,PHO,SG,77,208,22,0,University of Miami,815615,21,242,11,11,8,63,39,13,10,2,10,17
+Devin Booker,PHO,SG,78,206,21,2,University of Kentucky,2319360,54,1865,147,308,289,1346,244,253,47,14,194,168
+Dragan Bender,PHO,PF,85,225,20,1,,4468800,82,2069,118,69,39,531,361,130,22,53,112,166
+Elfrid Payton,PHO,PG,76,185,23,3,University of Louisiana at Lafayette,3332340,19,551,5,86,37,224,100,118,19,6,54,50
+Jared Dudley,PHO,PF,79,225,32,10,Boston College,1.00E+07,48,686,29,19,27,152,94,78,24,11,28,85
+Josh Gray,PHO,PG,73,180,24,0,Louisiana State University,101376,5,86,3,8,7,32,10,12,8,2,7,8
+Josh Jackson,PHO,SF,80,207,20,0,University of Kansas,5090040,77,1959,57,332,177,1012,351,119,80,35,146,218
+Marquese Chriss,PHO,PF,82,233,20,1,University of Washington,3073800,72,1527,56,146,96,556,395,83,51,70,107,205
+Shaquille Harrison,PHO,PG,76,190,24,0,University of Tulsa,267160,23,384,6,53,28,152,61,55,26,7,22,42
+T.J. Warren,PHO,SF,80,230,24,3,North Carolina State University,3152931,65,2142,20,509,193,1271,333,85,65,41,85,149
+Troy Daniels,PHO,SG,76,205,26,4,Virginia Commonwealth University,3408520,79,1622,183,49,56,703,127,48,26,5,56,137
+Tyler Ulis,PHO,PG,70,150,22,1,University of Kentucky,1312611,71,1658,42,172,84,554,128,311,70,7,127,120
+Tyson Chandler,PHO,C,85,240,35,16,,1.30E+07,46,1151,0,121,58,300,418,53,16,27,59,106
